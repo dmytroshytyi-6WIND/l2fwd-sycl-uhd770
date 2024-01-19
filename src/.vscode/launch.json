@@ -1,0 +1,253 @@
+{
+  "version" : "0.2.0", "configurations" : [
+    {
+      "comments" : [
+        "Full launch.json configuration details can be found here:",
+        "https://code.visualstudio.com/docs/cpp/launch-json-reference"
+      ],
+      "name" : "1oneAPI C++: Launch & Run",
+      "type" : "cppdbg",
+      "request" : "launch",
+      "preLaunchTask" : "",
+      "postDebugTask" : "",
+      "program" : "/home/user/l2fwd-intl/build/l2fwdnv",
+      "args" : [
+        "--file-prefix=3", "-l", "0-10", "-n", "2", "-a", "00:02.0",
+        //"--vdev=net_tap1,iface=foo1",
+        "--vdev=net_vhost,iface=/tmp/sock1,queues=5", "--", "-m", "2", "-w",
+        "2", "-b", "1024", "-p", "5", "-v", "0", "-z", "0"
+      ],
+      "stopAtEntry" : false,
+      "cwd" : "${workspaceFolder}",
+      "environment" : [
+        {"name" : "ZET_ENABLE_PROGRAM_DEBUGGING", "value" : "1"},
+        {"name" : "IGC_EnableGTLocationDebugging", "value" : "1"}
+      ],
+      "externalConsole" : false,
+      "MIMode" : "gdb",
+      "miDebuggerPath" : "gdb-oneapi",
+      "setupCommands" : [
+        {
+          "description" : "Enable pretty-printing for gdb",
+          "text" : "-enable-pretty-printing",
+          "ignoreFailures" : true
+        },
+        {
+          "description" : "Disable target async",
+          "text" : "set target-async off",
+          "ignoreFailures" : true
+        }
+      ]
+    },
+
+    {
+      "name" : "(gdb) Attach2",
+      "type" : "cppdbg",
+      "request" : "launch",
+      "stopAtEntry" : true,
+      "cwd" : "${workspaceFolder}",
+      "environment" : [
+        {"name" : "ZET_ENABLE_PROGRAM_DEBUGGING", "value" : "1"},
+        {"name" : "IGC_EnableGTLocationDebugging", "value" : "1"}
+      ],
+      "externalConsole" : false,
+      "miDebuggerPath" : "gdb-oneapi",
+      "program" : "/home/user/l2fwd-intl/build/l2fwdnv",
+      "args" : [
+        "--file-prefix=3", "-l", "0-10", "-n", "2", "-a", "00:02.0",
+        //"--vdev=net_tap1,iface=foo1",
+        "--vdev=net_vhost,iface=/tmp/sock1,queues=5", "--", "-m", "2", "-w",
+        "2", "-b", "1024", "-p", "5", "-v", "0", "-z", "0"
+      ],
+      "MIMode" : "gdb",
+      "setupCommands" : [
+        {
+          "description" : "Enable pretty-printing for gdb",
+          "text" : "-enable-pretty-printing",
+          "ignoreFailures" : true
+        },
+        {
+          "description" : "Set Disassembly Flavor to Intel",
+          "text" : "-gdb-set disassembly-flavor intel",
+          "ignoreFailures" : true
+        }
+      ]
+    },
+    {
+      "name" : "(gdb) Attach",
+      "type" : "cppdbg",
+      "request" : "launch",
+      "cwd" : "${workspaceFolder}",
+      "program" : "/home/user/l2fwd-intl/build/l2fwdnv",
+      "args" : [
+        "--file-prefix=3", "-l", "0-10", "-n", "2", "-a", "00:02.0",
+        //"--vdev=net_tap1,iface=foo1",
+        "--vdev=net_vhost,iface=/tmp/sock1,queues=5", "--", "-m", "2", "-w",
+        "2", "-b", "1024", "-p", "5", "-v", "0", "-z", "0"
+      ],
+      "MIMode" : "gdb",
+      "setupCommands" : [
+        {
+          "description" : "Enable pretty-printing for gdb",
+          "text" : "-enable-pretty-printing",
+          "ignoreFailures" : true
+        },
+        {
+          "description" : "Set Disassembly Flavor to Intel",
+          "text" : "-gdb-set disassembly-flavor intel",
+          "ignoreFailures" : true
+        }
+      ]
+    },
+    {
+      "comments" : [
+        "Full launch.json configuration details can be found here:",
+        "https://code.visualstudio.com/docs/cpp/launch-json-reference"
+      ],
+      "name" : "oneAPI C++: Launch & Run",
+      "type" : "cppdbg",
+      "request" : "launch",
+      "preLaunchTask" : "",
+      "postDebugTask" : "",
+      "program" : "/home/user/l2fwd-intl/build/l2fwdnv",
+      "args" : [
+        "--file-prefix=3", "-l", "0-2", "-n", "2", "-a", "00:02.0",
+        //"--vdev=net_tap1,iface=foo1",
+        "--vdev=net_vhost,iface=/tmp/sock1,queues=1", "--", "-m", "2", "-w",
+        "2", "-b", "16", "-p", "1", "-v", "0", "-z", "0"
+      ],
+      "stopAtEntry" : false,
+      "cwd" : "${workspaceFolder}",
+      "environment" : [
+        {"name" : "ZET_ENABLE_PROGRAM_DEBUGGING", "value" : "1"},
+        {"name" : "IGC_EnableGTLocationDebugging", "value" : "1"}
+      ],
+      "externalConsole" : false,
+      "MIMode" : "gdb",
+      "miDebuggerPath" : "gdb-oneapi",
+      "setupCommands" : [
+        {
+          "description" : "Enable pretty-printing for gdb",
+          "text" : "-enable-pretty-printing",
+          "ignoreFailures" : true
+        },
+        {
+          "description" : "Disable target async",
+          "text" : "set target-async off",
+          "ignoreFailures" : true
+        }
+      ]
+    },
+    {
+      "sudo" : true,
+      "comments" : [
+        "Full launch.json configuration details can be found here:",
+        "https://code.visualstudio.com/docs/cpp/launch-json-reference"
+      ],
+      "name" : "oneAPI C++: Launch & Break",
+      "type" : "cppdbg",
+      "request" : "launch",
+      "preLaunchTask" : "",
+      "postDebugTask" : "",
+      "program" : "/home/user/l2fwd-intl/build/l2fwdnv",
+      "args" : [
+        "--file-prefix=3",
+        "-l",
+        "0-10",
+        "-n",
+        "2",
+        "-a",
+        "00:02.0",
+        "--vdev=net_vhost,iface=/tmp/sock1,queues=1",
+        "--",
+        "-m",
+        "0",
+        "-w",
+        "2",
+        "-b",
+        "16",
+        "-p",
+        "1",
+        "-v",
+        "0",
+        "-z",
+        "0"
+      ],
+      "cwd" : "${workspaceFolder}",
+      "environment" : [
+
+      ],
+      "externalConsole" : false,
+      "MIMode" : "gdb",
+      "miDebuggerPath" : "gdb-oneapi",
+      "setupCommands" : [
+        {
+          "description" : "Enable pretty-printing for gdb",
+          "text" : "-enable-pretty-printing",
+          "ignoreFailures" : true
+        },
+        {
+          "description" : "Disable target async",
+          "text" : "set target-async off",
+          "ignoreFailures" : true
+        }
+      ]
+    },
+    {
+      "sudo" : true,
+      "comments" : [
+        "Full launch.json configuration details can be found here:",
+        "https://code.visualstudio.com/docs/cpp/launch-json-reference"
+      ],
+      "name" : "simd",
+      "type" : "cppdbg",
+      "request" : "launch",
+      "preLaunchTask" : "C/C++: gcc build active file",
+      "postDebugTask" : "C/C++: gcc build active file",
+      "program" : "/home/user/l2fwd-intl/build/l2fwdnv",
+      "args" : [
+        "--file-prefix=3",
+        "-l",
+        "0-10",
+        "-n",
+        "2",
+        "-a",
+        "00:02.0",
+        "--vdev=net_vhost,iface=/tmp/sock1,queues=1",
+        "--",
+        "-m",
+        "0",
+        "-w",
+        "2",
+        "-b",
+        "16",
+        "-p",
+        "1",
+        "-v",
+        "0",
+        "-z",
+        "0"
+      ],
+      "cwd" : "${workspaceFolder}",
+      "environment" : [
+        {"name" : "ZET_ENABLE_PROGRAM_DEBUGGING", "value" : "1"},
+        {"name" : "IGC_EnableGTLocationDebugging", "value" : "1"}
+      ],
+      "externalConsole" : false,
+      "MIMode" : "gdb",
+      "miDebuggerPath" : "gdb-oneapi",
+      "setupCommands" : [
+        {
+          "description" : "Enable pretty-printing for gdb",
+          "text" : "-enable-pretty-printing",
+          "ignoreFailures" : true
+        },
+        {
+          "description" : "Disable target async",
+          "text" : "set target-async off",
+          "ignoreFailures" : true
+        }
+      ]
+    }
+  ]
+}

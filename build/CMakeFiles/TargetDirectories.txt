@@ -1,0 +1,9 @@
+/home/user/l2fwd-intl/build/CMakeFiles/dpdk_target.dir
+/home/user/l2fwd-intl/build/CMakeFiles/l2fwdnv.dir
+/home/user/l2fwd-intl/build/CMakeFiles/test.dir
+/home/user/l2fwd-intl/build/CMakeFiles/edit_cache.dir
+/home/user/l2fwd-intl/build/CMakeFiles/rebuild_cache.dir
+/home/user/l2fwd-intl/build/CMakeFiles/list_install_components.dir
+/home/user/l2fwd-intl/build/CMakeFiles/install.dir
+/home/user/l2fwd-intl/build/CMakeFiles/install/local.dir
+/home/user/l2fwd-intl/build/CMakeFiles/install/strip.dir

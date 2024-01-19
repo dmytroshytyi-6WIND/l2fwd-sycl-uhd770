@@ -1,0 +1,42 @@
+[{
+  "name" : "jansson",
+  "version" : "2.14",
+  "compile_args" : [],
+  "link_args" : ["/usr/lib64/libjansson.so"]
+},
+ {
+   "name" : "libelf",
+   "version" : "0.185",
+   "compile_args" : [],
+   "link_args" : ["/usr/lib64/libelf.so"]
+ },
+ {
+   "name" : "libmlx5",
+   "version" : "1.24.42.0",
+   "compile_args" : [],
+   "link_args" : ["/usr/lib64/libmlx5.so"]
+ },
+ {
+   "name" : "libibverbs",
+   "version" : "1.14.42.0",
+   "compile_args" : [],
+   "link_args" : ["/usr/lib64/libibverbs.so"]
+ },
+ {
+   "name" : "libcrypto",
+   "version" : "1.1.1l",
+   "compile_args" : ["-DOPENSSL_LOAD_CONF"],
+   "link_args" : ["/usr/lib64/libcrypto.so"]
+ },
+ {
+   "name" : "zlib",
+   "version" : "1.2.13",
+   "compile_args" : [],
+   "link_args" : ["/usr/lib64/libz.so"]
+ },
+ {
+   "name" : "libmlx4",
+   "version" : "1.0.42.0",
+   "compile_args" : [],
+   "link_args" : ["/usr/lib64/libmlx4.so"]
+ }]

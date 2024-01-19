@@ -1,0 +1,1424 @@
+---
+MainSourceFile:  MainSrcFiles_placehold
+Replacements:
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          636
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          756
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          767
+    Length:          15
+    ReplacementText: __dpct_inline__
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          860
+    Length:          0
+    ReplacementText: "/*\n    DPCT1053:0: Migration of device assembly code is not supported.\n    */\n    "
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          1160
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          1247
+    Length:          0
+    ReplacementText: ",\n                       const sycl::nd_item<3> &item_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          1262
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          1275
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          1288
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          2927
+    Length:          15
+    ReplacementText: "/*\n\tDPCT1078:1: Consider replacing memory_order::acq_rel with memory_order::seq_cst for correctness if strong memory order restrictions are needed.\n\t*/\n\tsycl::atomic_fence(sycl::memory_order::acq_rel, sycl::memory_scope::device)"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          2945
+    Length:          15
+    ReplacementText: "/*\n\tDPCT1065:2: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n\t*/\n\titem_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          3051
+    Length:          22
+    ReplacementText: "/*\n\t\tDPCT1078:4: Consider replacing memory_order::acq_rel with memory_order::seq_cst for correctness if strong memory order restrictions are needed.\n\t\t*/\n\t\tsycl::atomic_fence(sycl::memory_order::acq_rel, sycl::memory_scope::system)"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          3079
+    Length:          15
+    ReplacementText: "/*\n\tDPCT1065:3: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n\t*/\n\titem_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          3233
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          3346
+    Length:          0
+    ReplacementText: "\t/*\n\tDPCT1010:20: SYCL uses exceptions to report errors and does not use the error codes. The call was replaced with 0. You need to rewrite this code.\n\t*/\n\t/*\n\tDPCT1009:21: SYCL uses exceptions to report errors and does not use the error codes. The original code was commented out and a warning string was inserted. You need to rewrite this code.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          3347
+    Length:          30
+    ReplacementText: '"cudaGetErrorString is not supported"/*cudaGetErrorString(CUDA_CHECK(cudaGetLastError()))*/'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          3379
+    Length:          0
+    ReplacementText: "\t/*\n\tDPCT1049:5: The work-group size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the work-group size if needed.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          3380
+    Length:          83
+    ReplacementText: "stream->parallel_for(\n\t  sycl::nd_range<3>(sycl::range<3>(1, 1, cuda_blocks) * sycl::range<3>(1, 1, cuda_threads), sycl::range<3>(1, 1, cuda_threads)), \n\t  [=](sycl::nd_item<3> item_ct1) {\n\t    kernel_mac_update(comm_list, wtime_n, item_ct1);\n\t  });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          3463
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          3465
+    Length:          0
+    ReplacementText: "\t/*\n\tDPCT1010:22: SYCL uses exceptions to report errors and does not use the error codes. The call was replaced with 0. You need to rewrite this code.\n\t*/\n\t/*\n\tDPCT1009:23: SYCL uses exceptions to report errors and does not use the error codes. The original code was commented out and a warning string was inserted. You need to rewrite this code.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          3466
+    Length:          30
+    ReplacementText: '"cudaGetErrorString is not supported"/*cudaGetErrorString(CUDA_CHECK(cudaGetLastError()))*/'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          3714
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          3813
+    Length:          0
+    ReplacementText: ",\n                                  const sycl::nd_item<3> &item_ct1,\n                                  uint32_t *wait_status_shared"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          3828
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          3841
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          3854
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          4009
+    Length:          42
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          4056
+    Length:          15
+    ReplacementText: "/*\n\tDPCT1065:6: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n\t*/\n\titem_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          4295
+    Length:          21
+    ReplacementText: "/*\n\t\t\t\t\tDPCT1078:10: Consider replacing memory_order::acq_rel with memory_order::seq_cst for correctness if strong memory order restrictions are needed.\n\t\t\t\t\t*/\n\t\t\t\t\tsycl::atomic_fence(sycl::memory_order::acq_rel, sycl::memory_scope::work_group)"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          4348
+    Length:          15
+    ReplacementText: "/*\n\t\tDPCT1065:7: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n\t\t*/\n\t\titem_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          6010
+    Length:          15
+    ReplacementText: "/*\n\t\tDPCT1078:8: Consider replacing memory_order::acq_rel with memory_order::seq_cst for correctness if strong memory order restrictions are needed.\n\t\t*/\n\t\tsycl::atomic_fence(sycl::memory_order::acq_rel, sycl::memory_scope::device)"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          6029
+    Length:          15
+    ReplacementText: "/*\n\t\tDPCT1065:9: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n\t\t*/\n\t\titem_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          6151
+    Length:          22
+    ReplacementText: "/*\n\t\t\tDPCT1078:11: Consider replacing memory_order::acq_rel with memory_order::seq_cst for correctness if strong memory order restrictions are needed.\n\t\t\t*/\n\t\t\tsycl::atomic_fence(sycl::memory_order::acq_rel, sycl::memory_scope::system)"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          6396
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          6508
+    Length:          0
+    ReplacementText: "\t/*\n\tDPCT1010:24: SYCL uses exceptions to report errors and does not use the error codes. The call was replaced with 0. You need to rewrite this code.\n\t*/\n\t/*\n\tDPCT1009:25: SYCL uses exceptions to report errors and does not use the error codes. The original code was commented out and a warning string was inserted. You need to rewrite this code.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          6509
+    Length:          30
+    ReplacementText: '"cudaGetErrorString is not supported"/*cudaGetErrorString(CUDA_CHECK(cudaGetLastError()))*/'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          6541
+    Length:          0
+    ReplacementText: "\t/*\n\tDPCT1049:12: The work-group size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the work-group size if needed.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          6542
+    Length:          94
+    ReplacementText: "stream->submit(\n\t  [&](sycl::handler &cgh) {\n\t    sycl::local_accessor<uint32_t, 1> wait_status_shared_acc_ct1(sycl::range<1>(1), cgh);\n\n\t    cgh.parallel_for(\n\t      sycl::nd_range<3>(sycl::range<3>(1, 1, cuda_blocks) * sycl::range<3>(1, 1, cuda_threads), sycl::range<3>(1, 1, cuda_threads)), \n\t      [=](sycl::nd_item<3> item_ct1) {\n\t        kernel_persistent_mac_update(comm_list, wtime_n, item_ct1, wait_status_shared_acc_ct1.get_pointer());\n\t      });\n\t  });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          6636
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          6638
+    Length:          0
+    ReplacementText: "\t/*\n\tDPCT1010:26: SYCL uses exceptions to report errors and does not use the error codes. The call was replaced with 0. You need to rewrite this code.\n\t*/\n\t/*\n\tDPCT1009:27: SYCL uses exceptions to report errors and does not use the error codes. The original code was commented out and a warning string was inserted. You need to rewrite this code.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          6639
+    Length:          30
+    ReplacementText: '"cudaGetErrorString is not supported"/*cudaGetErrorString(CUDA_CHECK(cudaGetLastError()))*/'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          6883
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          6983
+    Length:          0
+    ReplacementText: ",\n                              const sycl::nd_item<3> &item_ct1,\n                              uint32_t *wait_status_shared"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          6998
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          7011
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          7024
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          7108
+    Length:          42
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          7345
+    Length:          21
+    ReplacementText: "/*\n\t\t\t\tDPCT1078:17: Consider replacing memory_order::acq_rel with memory_order::seq_cst for correctness if strong memory order restrictions are needed.\n\t\t\t\t*/\n\t\t\t\tsycl::atomic_fence(sycl::memory_order::acq_rel, sycl::memory_scope::work_group)"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          7393
+    Length:          15
+    ReplacementText: "/*\n\tDPCT1065:13: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n\t*/\n\titem_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          9083
+    Length:          15
+    ReplacementText: "/*\n\tDPCT1078:14: Consider replacing memory_order::acq_rel with memory_order::seq_cst for correctness if strong memory order restrictions are needed.\n\t*/\n\tsycl::atomic_fence(sycl::memory_order::acq_rel, sycl::memory_scope::device)"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          9101
+    Length:          15
+    ReplacementText: "/*\n\tDPCT1065:15: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n\t*/\n\titem_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          9212
+    Length:          22
+    ReplacementText: "/*\n\t\tDPCT1078:18: Consider replacing memory_order::acq_rel with memory_order::seq_cst for correctness if strong memory order restrictions are needed.\n\t\t*/\n\t\tsycl::atomic_fence(sycl::memory_order::acq_rel, sycl::memory_scope::system)"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          9240
+    Length:          15
+    ReplacementText: "/*\n\tDPCT1065:16: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n\t*/\n\titem_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          9399
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          9477
+    Length:          0
+    ReplacementText: "\t/*\n\tDPCT1010:28: SYCL uses exceptions to report errors and does not use the error codes. The call was replaced with 0. You need to rewrite this code.\n\t*/\n\t/*\n\tDPCT1009:29: SYCL uses exceptions to report errors and does not use the error codes. The original code was commented out and a warning string was inserted. You need to rewrite this code.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          9478
+    Length:          30
+    ReplacementText: '"cudaGetErrorString is not supported"/*cudaGetErrorString(CUDA_CHECK(cudaGetLastError()))*/'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          9510
+    Length:          0
+    ReplacementText: "\t/*\n\tDPCT1049:19: The work-group size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the work-group size if needed.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          9511
+    Length:          86
+    ReplacementText: "stream->submit(\n\t  [&](sycl::handler &cgh) {\n\t    sycl::local_accessor<uint32_t, 1> wait_status_shared_acc_ct1(sycl::range<1>(1), cgh);\n\n\t    cgh.parallel_for(\n\t      sycl::nd_range<3>(sycl::range<3>(1, 1, cuda_blocks) * sycl::range<3>(1, 1, cuda_threads), sycl::range<3>(1, 1, cuda_threads)), \n\t      [=](sycl::nd_item<3> item_ct1) {\n\t        kernel_graphs_mac_update(bitem, wtime_n, item_ct1, wait_status_shared_acc_ct1.get_pointer());\n\t      });\n\t  });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          9597
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          9599
+    Length:          0
+    ReplacementText: "\t/*\n\tDPCT1010:30: SYCL uses exceptions to report errors and does not use the error codes. The call was replaced with 0. You need to rewrite this code.\n\t*/\n\t/*\n\tDPCT1009:31: SYCL uses exceptions to report errors and does not use the error codes. The original code was commented out and a warning string was inserted. You need to rewrite this code.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Offset:          9600
+    Length:          30
+    ReplacementText: '"cudaGetErrorString is not supported"/*cudaGetErrorString(CUDA_CHECK(cudaGetLastError()))*/'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          635
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          6982
+    Length:          0
+    ReplacementText: ' try '
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          6985
+    Length:          11
+    ReplacementText: 'dpct::err0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          7008
+    Length:          21
+    ReplacementText: 'dpct::device_info'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          8032
+    Length:          0
+    ReplacementText: "\t\t\t/*\n\t\t\tDPCT1009:35: SYCL uses exceptions to report errors and does not use the error codes. The original code was commented out and a warning string was inserted. You need to rewrite this code.\n\t\t\t*/\n\t\t\t/*\n\t\t\tDPCT1064:36: Migrated cudaGetErrorString call is used in a macro/template definition and may not be valid for all macro/template uses. Adjust the code.\n\t\t\t*/\n\t\t\t/*\n\t\t\tDPCT1093:34: The \"conf_gpu_id\" device may be not the one intended for use. Adjust the selected device if needed.\n\t\t\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          8035
+    Length:          38
+    ReplacementText: '"cudaGetErrorString is not supported"/*cudaGetErrorString(CUDA_CHECK(cudaSetDevice(conf_gpu_id)))*/'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          8089
+    Length:          23
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::dev_mgr::instance().get_device'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          8113
+    Length:          13
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          8138
+    Length:          0
+    ReplacementText: '.get_device_info(deviceProp))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          8140
+    Length:          0
+    ReplacementText: "\t\t\t/*\n\t\t\tDPCT1000:33: Error handling if-stmt was detected but could not be rewritten.\n\t\t\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          8159
+    Length:          11
+    ReplacementText: '0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          8172
+    Length:          0
+    ReplacementText: "\t\t\t\t/*\n\t\t\t\tDPCT1001:32: The statement could not be removed.\n\t\t\t\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          8264
+    Length:          4
+    ReplacementText: 'get_name()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          8270
+    Length:          0
+    ReplacementText: "\t\t\t\t\t\t/*\n\t\t\t\t\t\tDPCT1051:37: SYCL does not support a device property functionally compatible with pciDomainID. It was migrated to -1. You may need to adjust the value of -1 for the specific device.\n\t\t\t\t\t\t*/\n\t\t\t\t\t\t/*\n\t\t\t\t\t\tDPCT1051:38: SYCL does not support a device property functionally compatible with pciBusID. It was migrated to -1. You may need to adjust the value of -1 for the specific device.\n\t\t\t\t\t\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          8276
+    Length:          22
+    ReplacementText: '-1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          8300
+    Length:          19
+    ReplacementText: '-1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          8332
+    Length:          11
+    ReplacementText: 'get_device_id()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          9031
+    Length:          0
+    ReplacementText: "\ncatch (sycl::exception const &exc) {\n  std::cerr << exc.what() << \"Exception caught at file:\" << __FILE__ << \", line:\" << __LINE__ << std::endl;\n  std::exit(1);\n}"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          9078
+    Length:          0
+    ReplacementText: ' try '
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          9176
+    Length:          11
+    ReplacementText: 'dpct::err0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          9199
+    Length:          11
+    ReplacementText: '0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          12045
+    Length:          28
+    ReplacementText: 'DPCT_CHECK_ERROR(totDevs = dpct::dev_mgr::instance().device_count())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          12077
+    Length:          111
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          12859
+    Length:          0
+    ReplacementText: "\ncatch (sycl::exception const &exc) {\n  std::cerr << exc.what() << \"Exception caught at file:\" << __FILE__ << \", line:\" << __LINE__ << std::endl;\n  std::exit(1);\n}"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          13126
+    Length:          0
+    ReplacementText: ' try '
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          13518
+    Length:          0
+    ReplacementText: "\t\t/*\n\t\tDPCT1009:40: SYCL uses exceptions to report errors and does not use the error codes. The original code was commented out and a warning string was inserted. You need to rewrite this code.\n\t\t*/\n\t\t/*\n\t\tDPCT1093:39: The \"conf_gpu_id\" device may be not the one intended for use. Adjust the selected device if needed.\n\t\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          13520
+    Length:          38
+    ReplacementText: '"cudaGetErrorString is not supported"/*cudaGetErrorString(CUDA_CHECK(cudaSetDevice(conf_gpu_id)))*/'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          13611
+    Length:          0
+    ReplacementText: "\t\t/*\n\t\tDPCT1009:42: SYCL uses exceptions to report errors and does not use the error codes. The original code was commented out and a warning string was inserted. You need to rewrite this code.\n\t\t*/\n\t\t/*\n\t\tDPCT1064:43: Migrated cudaGetErrorString call is used in a macro/template definition and may not be valid for all macro/template uses. Adjust the code.\n\t\t*/\n\t\t/*\n\t\tDPCT1007:41: Migration of cudaGraphLaunch is not supported.\n\t\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          13613
+    Length:          66
+    ReplacementText: '"cudaGetErrorString is not supported"/*cudaGetErrorString(CUDA_CHECK(cudaGraphLaunch(p_v->winstance[ngraph], p_v->c_stream)))*/'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          16247
+    Length:          0
+    ReplacementText: "\t\t\t\t\t/*\n\t\t\t\t\tDPCT1009:45: SYCL uses exceptions to report errors and does not use the error codes. The original code was commented out and a warning string was inserted. You need to rewrite this code.\n\t\t\t\t\t*/\n\t\t\t\t\t/*\n\t\t\t\t\tDPCT1007:44: Migration of cudaGraphLaunch is not supported.\n\t\t\t\t\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          16252
+    Length:          66
+    ReplacementText: '"cudaGetErrorString is not supported"/*cudaGetErrorString(CUDA_CHECK(cudaGraphLaunch(p_v->winstance[ngraph], p_v->c_stream)))*/'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          17116
+    Length:          0
+    ReplacementText: "\ncatch (sycl::exception const &exc) {\n  std::cerr << exc.what() << \"Exception caught at file:\" << __FILE__ << \", line:\" << __LINE__ << std::endl;\n  std::exit(1);\n}"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          17383
+    Length:          0
+    ReplacementText: ' try '
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          17706
+    Length:          0
+    ReplacementText: "\t\t/*\n\t\tDPCT1009:47: SYCL uses exceptions to report errors and does not use the error codes. The original code was commented out and a warning string was inserted. You need to rewrite this code.\n\t\t*/\n\t\t/*\n\t\tDPCT1064:48: Migrated cudaGetErrorString call is used in a macro/template definition and may not be valid for all macro/template uses. Adjust the code.\n\t\t*/\n\t\t/*\n\t\tDPCT1093:46: The \"conf_gpu_id\" device may be not the one intended for use. Adjust the selected device if needed.\n\t\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          17708
+    Length:          38
+    ReplacementText: '"cudaGetErrorString is not supported"/*cudaGetErrorString(CUDA_CHECK(cudaSetDevice(conf_gpu_id)))*/'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          19765
+    Length:          0
+    ReplacementText: "\ncatch (sycl::exception const &exc) {\n  std::cerr << exc.what() << \"Exception caught at file:\" << __FILE__ << \", line:\" << __LINE__ << std::endl;\n  std::exit(1);\n}"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          21498
+    Length:          0
+    ReplacementText: "\t/*\n\tDPCT1007:49: Migration of cudaProfilerStop is not supported.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          22441
+    Length:          0
+    ReplacementText: "\t/*\n\tDPCT1093:50: The \"conf_gpu_id\" device may be not the one intended for use. Adjust the selected device if needed.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          22442
+    Length:          13
+    ReplacementText: 'dpct::select_device'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          22471
+    Length:          11
+    ReplacementText: 'sycl::free(0, dpct::get_default_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          29794
+    Length:          0
+    ReplacementText: "\t\t/*\n\t\tDPCT1007:51: Migration of cudaProfilerStart is not supported.\n\t\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Offset:          30999
+    Length:          0
+    ReplacementText: "\t\t/*\n\t\tDPCT1007:52: Migration of cudaProfilerStop is not supported.\n\t\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+    Offset:          635
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+    Offset:          800
+    Length:          0
+    ReplacementText: ' try '
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+    Offset:          1405
+    Length:          0
+    ReplacementText: "\t\t/*\n\t\tDPCT1009:54: SYCL uses exceptions to report errors and does not use the error codes. The original code was commented out and a warning string was inserted. You need to rewrite this code.\n\t\t*/\n\t\t/*\n\t\tDPCT1064:55: Migrated cudaGetErrorString call is used in a macro/template definition and may not be valid for all macro/template uses. Adjust the code.\n\t\t*/\n\t\t/*\n\t\tDPCT1025:53: The SYCL queue is created ignoring the flag and priority options.\n\t\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+    Offset:          1407
+    Length:          73
+    ReplacementText: '"cudaGetErrorString is not supported"/*cudaGetErrorString(CUDA_CHECK(cudaStreamCreateWithFlags(&(c_stream), cudaStreamNonBlocking)))*/'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+    Offset:          2870
+    Length:          54
+    ReplacementText: "\t\t\t\t/*\n\t\t\t\tDPCT1026:56: The call to cudaStreamEndCapture was removed because SYCL currently does not support capture operations on queues.\n\t\t\t\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+    Offset:          2924
+    Length:          0
+    ReplacementText: "\t\t\t\t/*\n\t\t\t\tDPCT1007:57: Migration of cudaGraphInstantiate is not supported.\n\t\t\t\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+    Offset:          3016
+    Length:          0
+    ReplacementText: "\ncatch (sycl::exception const &exc) {\n  std::cerr << exc.what() << \"Exception caught at file:\" << __FILE__ << \", line:\" << __LINE__ << std::endl;\n  std::exit(1);\n}"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+    Offset:          3080
+    Length:          27
+    ReplacementText: 'dpct::get_current_device().destroy_queue(c_stream)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+    Offset:          3274
+    Length:          0
+    ReplacementText: "\t\t\t/*\n\t\t\tDPCT1007:58: Migration of cudaGraphDestroy is not supported.\n\t\t\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+    Offset:          3388
+    Length:          0
+    ReplacementText: ' try '
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+    Offset:          3780
+    Length:          0
+    ReplacementText: "\t\t/*\n\t\tDPCT1009:59: SYCL uses exceptions to report errors and does not use the error codes. The original code was commented out and a warning string was inserted. You need to rewrite this code.\n\t\t*/\n\t\t/*\n\t\tDPCT1064:60: Migrated cudaGetErrorString call is used in a macro/template definition and may not be valid for all macro/template uses. Adjust the code.\n\t\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+    Offset:          3782
+    Length:          43
+    ReplacementText: '"cudaGetErrorString is not supported"/*cudaGetErrorString(CUDA_CHECK(cudaStreamSynchronize(c_stream)))*/'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+    Offset:          3831
+    Length:          0
+    ReplacementText: "\ncatch (sycl::exception const &exc) {\n  std::cerr << exc.what() << \"Exception caught at file:\" << __FILE__ << \", line:\" << __LINE__ << std::endl;\n  std::exit(1);\n}"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+    Digest:          9654ad0a21a5b6921e1d747d04e2c53b
+  - MainSourceFile:  '/home/ubuntu/l2fwd-nv/src/main.cpp'
+    Digest:          e2278e5e895cbedd2a5fb439a4c848c5
+  - MainSourceFile:  '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+    Digest:          09a165c15e91e21d2e490d25de323ed4
+DpctVersion:     2023.2.0
+MainHelperFileName: dpct
+USMLevel:        ''
+FeatureMap:
+  device.hpp:
+    dev_mgr:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+        - '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+      SubFeatureMap:
+        dev_mgr_1:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+            - '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+          SubFeatureMap:   {}
+        dev_mgr_2:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+            - '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+          SubFeatureMap:   {}
+        dev_mgr_3:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+            - '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+          SubFeatureMap:   {}
+        dev_mgr_4:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+            - '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+          SubFeatureMap:   {}
+        dev_mgr_check_id:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+            - '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+          SubFeatureMap:   {}
+        dev_mgr_current_device:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+            - '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+          SubFeatureMap:   {}
+        dev_mgr_current_device_id:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+            - '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+          SubFeatureMap:   {}
+        dev_mgr_device_count:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+          SubFeatureMap:   {}
+        dev_mgr_get_device:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+          SubFeatureMap:   {}
+        dev_mgr_select_device:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+          SubFeatureMap:   {}
+    device_ext:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+        - '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+      SubFeatureMap:
+        device_ext_1:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+            - '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+          SubFeatureMap:   {}
+        device_ext_2:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+            - '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+          SubFeatureMap:   {}
+        device_ext_create_inorder_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+          SubFeatureMap:   {}
+        device_ext_create_outoforder_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+          SubFeatureMap:   {}
+        device_ext_create_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+          SubFeatureMap:   {}
+        device_ext_default_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+            - '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+          SubFeatureMap:   {}
+        device_ext_destroy_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+          SubFeatureMap:   {}
+        device_ext_get_device_info_return_info:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+          SubFeatureMap:   {}
+        device_ext_get_device_info_return_void:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+          SubFeatureMap:   {}
+        device_ext_get_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+          SubFeatureMap:   {}
+        device_ext_inorder_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+            - '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+          SubFeatureMap:   {}
+        device_ext_outoforder_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+            - '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+          SubFeatureMap:   {}
+    device_info:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+      SubFeatureMap:
+        device_info_1:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+          SubFeatureMap:   {}
+        device_info_get_name:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+          SubFeatureMap:   {}
+        device_info_set_device_id:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+          SubFeatureMap:   {}
+        device_info_set_global_mem_size:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+          SubFeatureMap:   {}
+        device_info_set_host_unified_memory:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+          SubFeatureMap:   {}
+        device_info_set_local_mem_size:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+          SubFeatureMap:   {}
+        device_info_set_major_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+          SubFeatureMap:   {}
+        device_info_set_max_clock_frequency:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+          SubFeatureMap:   {}
+        device_info_set_max_compute_units:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+          SubFeatureMap:   {}
+        device_info_set_max_nd_range_size:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+          SubFeatureMap:   {}
+        device_info_set_max_register_size_per_work_group:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+          SubFeatureMap:   {}
+        device_info_set_max_sub_group_size:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+          SubFeatureMap:   {}
+        device_info_set_max_work_group_size:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+          SubFeatureMap:   {}
+        device_info_set_max_work_item_sizes:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+          SubFeatureMap:   {}
+        device_info_set_max_work_items_per_compute_unit:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+          SubFeatureMap:   {}
+        device_info_set_minor_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+          SubFeatureMap:   {}
+        device_info_set_name:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+          SubFeatureMap:   {}
+        device_info_set_uuid:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+          SubFeatureMap:   {}
+    device_info_get_device_id:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+      SubFeatureMap:   {}
+    device_info_set_memory_bus_width:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+      SubFeatureMap:   {}
+    device_info_set_memory_clock_rate:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+      SubFeatureMap:   {}
+    exception_handler:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+        - '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+      SubFeatureMap:   {}
+    get_current_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+      SubFeatureMap:   {}
+    get_default_queue:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+      SubFeatureMap:   {}
+    get_tid:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+        - '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+      SubFeatureMap:   {}
+    select_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+      SubFeatureMap:   {}
+    typedef_queue_ptr:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+      SubFeatureMap:   {}
+  dpct.hpp:
+    check_error_code:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+        - '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+      SubFeatureMap:   {}
+    dpct_align_and_inline:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/ubuntu/l2fwd-nv/src/kernel.cu'
+      SubFeatureMap:   {}
+    error_code:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+        - '/home/ubuntu/l2fwd-nv/src/pipeline.cpp'
+      SubFeatureMap:   {}
+    non_local_include_dependency:
+      IsCalled:        true
+      CallerSrcFiles:
+        - ''
+      SubFeatureMap:   {}
+  util.hpp:
+    err_types:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/ubuntu/l2fwd-nv/src/main.cpp'
+      SubFeatureMap:   {}
+CompileTargets:  {}
+OptionMap:
+  AnalysisScopePath:
+    Value:           '/home/ubuntu/l2fwd-nv/src'
+    Specified:       false
+  AsyncHandler:
+    Value:           'false'
+    Specified:       false
+  CommentsEnabled:
+    Value:           'false'
+    Specified:       false
+  CompilationsDir:
+    Value:           ''
+    Specified:       false
+  CtadEnabled:
+    Value:           'false'
+    Specified:       false
+  CustomHelperFileName:
+    Value:           dpct
+    Specified:       false
+  EnablepProfiling:
+    Value:           'false'
+    Specified:       false
+  ExperimentalFlag:
+    Value:           '0'
+    Specified:       false
+  ExplicitClNamespace:
+    Value:           'false'
+    Specified:       false
+  ExplicitNamespace:
+    Value:           '20'
+    Specified:       false
+  ExtensionDDFlag:
+    Value:           '0'
+    Specified:       false
+  ExtensionDEFlag:
+    Value:           '4294967295'
+    Specified:       false
+  NDRangeDim:
+    Value:           '3'
+    Specified:       false
+  NoDRYPattern:
+    Value:           'false'
+    Specified:       false
+  OptimizeMigration:
+    Value:           'false'
+    Specified:       false
+  ProcessAll:
+    Value:           'false'
+    Specified:       false
+  RuleFile:
+    Value:           ''
+    Specified:       false
+  SyclNamedLambda:
+    Value:           'false'
+    Specified:       false
+  UsmLevel:
+    Value:           '1'
+    Specified:       false
+...

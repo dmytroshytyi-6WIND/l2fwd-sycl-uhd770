@@ -1,0 +1,30 @@
+{
+  "configurations" : [ {
+    "name" : "Linux",
+    "includePath" : [
+      "${workspaceFolder}/**",
+      "/opt/intel/oneapi/compiler/2023.2.1/linux/include/sycl/**",
+      "/opt/intel/oneapi/dpcpp-ct/latest/include/**",
+      "/opt/intel/oneapi/compiler/2023.2.1/linux/include/**",
+      "/home/user/l2fwd-intl/include/**",
+
+      "/opt/intel/oneapi/compiler/latest/linux/include",
+      "/opt/intel/oneapi/compiler/latest/linux/compiler/include",
+      "/opt/intel/oneapi/compiler/latest/linux/mpi/include",
+      "/opt/intel/oneapi/compiler/latest/linux/ipp/include",
+      "/opt/intel/oneapi/compiler/latest/linux/tbb/include",
+      "/opt/intel/oneapi/compiler/latest/linux/mkl/include",
+      "/opt/intel/oneapi/compiler/latest/linux/dpcpp_cpp_headers/include",
+      "/opt/intel/oneapi/compiler/latest/linux/dpcpp_cpp_headers/include/sycl",
+      "/opt/intel/oneapi/compiler/latest/linux/daal/include",
+      "/opt/to/intel/oneapi/compiler/latest/linux/ippcp/include"
+    ],
+    "defines" : [],
+    "compilerPath" : "/opt/intel/oneapi/compiler/latest/linux/bin/icpx",
+    "cStandard" : "c11",
+    "cppStandard" : "gnu++17",
+    "intelliSenseMode" : "linux-clang-x64",
+    "compilerArgs" : ["-fsycl"]
+  } ],
+                     "version" : 4
+}

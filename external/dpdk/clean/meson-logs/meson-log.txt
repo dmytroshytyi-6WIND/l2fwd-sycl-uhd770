@@ -1,0 +1,5255 @@
+Build started at 2023-11-07T01:03:44.719894
+Main binary: /usr/bin/python3
+Build Options: 
+Python system: Linux
+The Meson build system
+Version: 0.61.5
+Source dir: /home/user/l2fwd-intl/external/dpdk
+Build dir: /home/user/l2fwd-intl/external/dpdk/clean
+Build type: native build
+Program cat found: YES (/usr/bin/cat)
+Running command: /usr/bin/cat /home/user/l2fwd-intl/external/dpdk/VERSION
+--- stdout ---
+22.03.0-rc3
+
+--- stderr ---
+
+
+Project name: DPDK
+Project version: 22.03.0-rc3
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/user/l2fwd-intl/external/dpdk/clean/meson-private/sanitycheckc.exe
+C compiler for the host machine: cc (gcc 13.2.1 "cc (SUSE Linux) 13.2.1 20230803 [revision cc279d6c64562f05019e1d12d0d825f9391b5553]")
+C linker for the host machine: cc ld.bfd 2.39.0.20220810-150100
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/user/l2fwd-intl/external/dpdk/clean/meson-private/sanitycheckc.exe
+C compiler for the build machine: cc (gcc 13.2.1 "cc (SUSE Linux) 13.2.1 20230803 [revision cc279d6c64562f05019e1d12d0d825f9391b5553]")
+C linker for the build machine: cc ld.bfd 2.39.0.20220810-150100
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+[Errno 21] Is a directory: '/home/user/l2fwd-intl/external/dpdk/buildtools/pkg-config'
+Unusable script '/home/user/l2fwd-intl/external/dpdk/buildtools/pkg-config'
+Program pkg-config found: YES (/usr/bin/pkg-config)
+Program check-symbols.sh found: YES (/home/user/l2fwd-intl/external/dpdk/buildtools/check-symbols.sh)
+Program options-ibverbs-static.sh found: YES (/home/user/l2fwd-intl/external/dpdk/buildtools/options-ibverbs-static.sh)
+Program objdump found: YES (/usr/bin/objdump)
+Program python3 found: YES (/usr/bin/python3)
+Running command: /usr/bin/python3 -c import importlib.util; import sys; exit(importlib.util.find_spec("elftools") is None)
+--- stdout ---
+
+--- stderr ---
+
+
+Program cat found: YES (/usr/bin/cat)
+Running command: /usr/bin/cat /home/user/l2fwd-intl/external/dpdk/ABI_VERSION
+--- stdout ---
+22.1
+
+--- stderr ---
+
+
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpi2nmis2f
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpi2nmis2f/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpi2nmis2f/output.exe -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include<stdio.h>
+        
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Checking for size of "void *" : 8
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpa4jrpc6_
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpa4jrpc6_/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpa4jrpc6_/output.exe -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include<stdio.h>
+        
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Checking for size of "void *" : 8
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpb90gd9p2
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpb90gd9p2/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpb90gd9p2/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library m found: YES
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmphwwqf4yt
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmphwwqf4yt/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmphwwqf4yt/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lnuma -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library numa found: YES
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmphv9g1mdn
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmphv9g1mdn/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("numaif.h")
+          #error "Header 'numaif.h' could not be found"
+         #endif
+        #else
+         #include <numaif.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "numaif.h" : YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpi4o_g_81
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpi4o_g_81/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpi4o_g_81/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -llibfdt -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/lib64/gcc/x86_64-suse-linux/13/../../../../x86_64-suse-linux/bin/ld: cannot find -llibfdt: No such file or directory
+collect2: error: ld returned 1 exit status
+
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp20hzkvqp
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp20hzkvqp/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp20hzkvqp/output.exe -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include<stdio.h>
+        
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpb4hpw3ky
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpb4hpw3ky/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpb4hpw3ky/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib64/gcc/x86_64-suse-linux/13/
+programs: =/usr/lib64/gcc/x86_64-suse-linux/13/:/usr/lib64/gcc/x86_64-suse-linux/13/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/13/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/13/../../../../x86_64-suse-linux/bin/x86_64-suse-linux/13/:/usr/lib64/gcc/x86_64-suse-linux/13/../../../../x86_64-suse-linux/bin/
+libraries: =/opt/intel/oneapi/tbb/2021.10.0/env/../lib/intel64/gcc4.8/x86_64-suse-linux/13/:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/intel64/gcc4.8/../lib64/:/opt/intel/oneapi/mpi/2021.10.0//libfabric/lib/x86_64-suse-linux/13/:/opt/intel/oneapi/mpi/2021.10.0//libfabric/lib/../lib64/:/opt/intel/oneapi/mpi/2021.10.0//lib/release/x86_64-suse-linux/13/:/opt/intel/oneapi/mpi/2021.10.0//lib/release/../lib64/:/opt/intel/oneapi/mpi/2021.10.0//lib/x86_64-suse-linux/13/:/opt/intel/oneapi/mpi/2021.10.0//lib/../lib64/:/opt/intel/oneapi/mkl/2023.2.0/lib/intel64/x86_64-suse-linux/13/:/opt/intel/oneapi/mkl/2023.2.0/lib/intel64/../lib64/:/opt/intel/oneapi/ippcp/2021.8.0/lib/intel64/x86_64-suse-linux/13/:/opt/intel/oneapi/ippcp/2021.8.0/lib/intel64/../lib64/:/opt/intel/oneapi/ipp/2021.9.0/lib/intel64/x86_64-suse-linux/13/:/opt/intel/oneapi/ipp/2021.9.0/lib/intel64/../lib64/:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/lib/x86_64-suse-linux/13/:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/lib/../lib64/:/opt/intel/oneapi/dal/2023.2.0/lib/intel64/x86_64-suse-linux/13/:/opt/intel/oneapi/dal/2023.2.0/lib/intel64/../lib64/:/opt/intel/oneapi/compiler/2023.2.1/linux/compiler/lib/intel64_lin/x86_64-suse-linux/13/:/opt/intel/oneapi/compiler/2023.2.1/linux/compiler/lib/intel64_lin/../lib64/:/opt/intel/oneapi/compiler/2023.2.1/linux/lib/x86_64-suse-linux/13/:/opt/intel/oneapi/compiler/2023.2.1/linux/lib/../lib64/:/opt/intel/oneapi/ccl/2021.10.0/lib/cpu_gpu_dpcpp/x86_64-suse-linux/13/:/opt/intel/oneapi/ccl/2021.10.0/lib/cpu_gpu_dpcpp/../lib64/:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/intel64/gcc4.8/x86_64-suse-linux/13/:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/intel64/gcc4.8/../lib64/:/opt/intel/oneapi/mpi/2021.10.0//libfabric/lib/x86_64-suse-linux/13/:/opt/intel/oneapi/mpi/2021.10.0//libfabric/lib/../lib64/:/opt/intel/oneapi/mpi/2021.10.0//lib/release/x86_64-suse-linux/13/:/opt/intel/oneapi/mpi/2021.10.0//lib/release/../lib64/:/opt/intel/oneapi/mpi/2021.10.0//lib/x86_64-suse-linux/13/:/opt/intel/oneapi/mpi/2021.10.0//lib/../lib64/:/opt/intel/oneapi/mkl/2023.2.0/lib/intel64/x86_64-suse-linux/13/:/opt/intel/oneapi/mkl/2023.2.0/lib/intel64/../lib64/:/opt/intel/oneapi/ippcp/2021.8.0/lib/intel64/x86_64-suse-linux/13/:/opt/intel/oneapi/ippcp/2021.8.0/lib/intel64/../lib64/:/opt/intel/oneapi/ipp/2021.9.0/lib/intel64/x86_64-suse-linux/13/:/opt/intel/oneapi/ipp/2021.9.0/lib/intel64/../lib64/:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/lib/x86_64-suse-linux/13/:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/lib/../lib64/:/opt/intel/oneapi/dal/2023.2.0/lib/intel64/x86_64-suse-linux/13/:/opt/intel/oneapi/dal/2023.2.0/lib/intel64/../lib64/:/opt/intel/oneapi/compiler/2023.2.1/linux/compiler/lib/intel64_lin/x86_64-suse-linux/13/:/opt/intel/oneapi/compiler/2023.2.1/linux/compiler/lib/intel64_lin/../lib64/:/opt/intel/oneapi/compiler/2023.2.1/linux/lib/x86_64-suse-linux/13/:/opt/intel/oneapi/compiler/2023.2.1/linux/lib/../lib64/:/opt/intel/oneapi/ccl/2021.10.0/lib/cpu_gpu_dpcpp/x86_64-suse-linux/13/:/opt/intel/oneapi/ccl/2021.10.0/lib/cpu_gpu_dpcpp/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/13/:/usr/lib64/gcc/x86_64-suse-linux/13/../../../../x86_64-suse-linux/lib/x86_64-suse-linux/13/:/usr/lib64/gcc/x86_64-suse-linux/13/../../../../x86_64-suse-linux/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/13/../../../x86_64-suse-linux/13/:/usr/lib64/gcc/x86_64-suse-linux/13/../../../../lib64/:/lib/x86_64-suse-linux/13/:/lib/../lib64/:/usr/lib/x86_64-suse-linux/13/:/usr/lib/../lib64/:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/intel64/gcc4.8/:/opt/intel/oneapi/mpi/2021.10.0//libfabric/lib/:/opt/intel/oneapi/mpi/2021.10.0//lib/release/:/opt/intel/oneapi/mpi/2021.10.0//lib/:/opt/intel/oneapi/mkl/2023.2.0/lib/intel64/:/opt/intel/oneapi/ippcp/2021.8.0/lib/intel64/:/opt/intel/oneapi/ipp/2021.9.0/lib/intel64/:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/lib/:/opt/intel/oneapi/dal/2023.2.0/lib/intel64/:/opt/intel/oneapi/compiler/2023.2.1/linux/compiler/lib/intel64_lin/:/opt/intel/oneapi/compiler/2023.2.1/linux/lib/:/opt/intel/oneapi/ccl/2021.10.0/lib/cpu_gpu_dpcpp/:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/intel64/gcc4.8/:/opt/intel/oneapi/mpi/2021.10.0//libfabric/lib/:/opt/intel/oneapi/mpi/2021.10.0//lib/release/:/opt/intel/oneapi/mpi/2021.10.0//lib/:/opt/intel/oneapi/mkl/2023.2.0/lib/intel64/:/opt/intel/oneapi/ippcp/2021.8.0/lib/intel64/:/opt/intel/oneapi/ipp/2021.9.0/lib/intel64/:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/lib/:/opt/intel/oneapi/dal/2023.2.0/lib/intel64/:/opt/intel/oneapi/compiler/2023.2.1/linux/compiler/lib/intel64_lin/:/opt/intel/oneapi/compiler/2023.2.1/linux/lib/:/opt/intel/oneapi/ccl/2021.10.0/lib/cpu_gpu_dpcpp/:/usr/lib64/gcc/x86_64-suse-linux/13/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/13/../../../:/lib/:/usr/lib/
+
+Compiler stderr:
+ 
+Library libfdt found: NO
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmprp5cfz7a
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmprp5cfz7a/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmprp5cfz7a/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -llibexecinfo -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/lib64/gcc/x86_64-suse-linux/13/../../../../x86_64-suse-linux/bin/ld: cannot find -llibexecinfo: No such file or directory
+collect2: error: ld returned 1 exit status
+
+Library libexecinfo found: NO
+Pkg-config binary for 1 is not cached.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: /usr/bin/pkg-config (0.29.2)
+Determining dependency 'libarchive' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --modversion libarchive` -> 1
+
+Run-time dependency libarchive found: NO (tried pkgconfig)
+Pkg-config binary for 1 is cached.
+Determining dependency 'libbsd' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --modversion libbsd` -> 1
+
+Run-time dependency libbsd found: NO (tried pkgconfig)
+Pkg-config binary for 1 is cached.
+Determining dependency 'jansson' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --modversion jansson` -> 0
+2.14
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --cflags jansson` -> 0
+
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+Called `/usr/bin/pkg-config --libs jansson` -> 0
+-L/usr/lib64 -ljansson
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --libs jansson` -> 0
+-ljansson
+Run-time dependency jansson found: YES 2.14
+Pkg-config binary for 1 is cached.
+Determining dependency 'libpcap' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --modversion libpcap` -> 1
+
+Run-time dependency libpcap found: NO (tried pkgconfig)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpcvx95o1e
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpcvx95o1e/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpcvx95o1e/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lpcap -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/lib64/gcc/x86_64-suse-linux/13/../../../../x86_64-suse-linux/bin/ld: cannot find -lpcap: No such file or directory
+collect2: error: ld returned 1 exit status
+
+Library pcap found: NO
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpiinl4md4
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpiinl4md4/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpiinl4md4/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wcast-qual 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wcast-qual: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpxjzrizow
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpxjzrizow/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpxjzrizow/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wdeprecated 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wdeprecated: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp2qi69a16
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp2qi69a16/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp2qi69a16/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wformat 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wformat: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp47o1ls65
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp47o1ls65/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp47o1ls65/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wformat-nonliteral 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc1: warning: '-Wformat-nonliteral' ignored without '-Wformat' [-Wformat-nonliteral]
+
+Compiler for C supports arguments -Wformat-nonliteral: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp55dfq7v7
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp55dfq7v7/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp55dfq7v7/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wformat-security 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc1: warning: '-Wformat-security' ignored without '-Wformat' [-Wformat-security]
+
+Compiler for C supports arguments -Wformat-security: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp26ju7or0
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp26ju7or0/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp26ju7or0/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-declarations 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wmissing-declarations: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpz2w1fscq
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpz2w1fscq/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpz2w1fscq/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-prototypes 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wmissing-prototypes: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpjbx1dv5b
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpjbx1dv5b/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpjbx1dv5b/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wnested-externs 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wnested-externs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpjvtwqk_x
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpjvtwqk_x/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpjvtwqk_x/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wold-style-definition 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wold-style-definition: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpxxgj79xp
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpxxgj79xp/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpxxgj79xp/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wpointer-arith 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wpointer-arith: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpk9zzncxx
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpk9zzncxx/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpk9zzncxx/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wsign-compare 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wsign-compare: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp6sukmo53
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp6sukmo53/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp6sukmo53/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wstrict-prototypes 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp84e4k7eh
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp84e4k7eh/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp84e4k7eh/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wundef 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wundef: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpbkhnstsz
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpbkhnstsz/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpbkhnstsz/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wwrite-strings 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wwrite-strings: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp9cuts0dq
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp9cuts0dq/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp9cuts0dq/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Waddress-of-packed-member -Wno-address-of-packed-member 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-address-of-packed-member: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpyou7fgmv
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpyou7fgmv/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpyou7fgmv/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wpacked-not-aligned -Wno-packed-not-aligned 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-packed-not-aligned: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpan68xjjw
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpan68xjjw/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpan68xjjw/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-field-initializers -Wno-missing-field-initializers 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-missing-field-initializers: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp0z5px0_a
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp0z5px0_a/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp0z5px0_a/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wzero-length-bounds -Wno-zero-length-bounds 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-zero-length-bounds: YES 
+Running command: /usr/bin/python3 /home/user/l2fwd-intl/external/dpdk/buildtools/binutils-avx512-check.py /usr/bin/objdump cc
+--- stdout ---
+
+--- stderr ---
+
+
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp4ogbk8qk
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp4ogbk8qk/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp4ogbk8qk/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -mavx512f 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -mavx512f: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpzbg9b0xp
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpzbg9b0xp/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpzbg9b0xp/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -mavx512f 
+
+Code:
+ #include <immintrin.h>
+    void test(__m512i zmm){
+        __m256i ymm = _mm512_extracti64x4_epi64(zmm, 0);}
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "AVX512 checking" compiles: YES 
+Running compile:
+Working directory:  /tmp/tmpvmhl1waf
+Command line:  cc /tmp/tmpvmhl1waf/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __SSE4_2__
+        # define __SSE4_2__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__SSE4_2__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Compiler stderr:
+ 
+Fetching value of define "__SSE4_2__" : 1 
+Running compile:
+Working directory:  /tmp/tmpjytd0671
+Command line:  cc /tmp/tmpjytd0671/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __AES__
+        # define __AES__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AES__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Compiler stderr:
+ 
+Fetching value of define "__AES__" : 1 
+Running compile:
+Working directory:  /tmp/tmpcb__7kux
+Command line:  cc /tmp/tmpcb__7kux/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __AVX__
+        # define __AVX__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Compiler stderr:
+ 
+Fetching value of define "__AVX__" : 1 
+Running compile:
+Working directory:  /tmp/tmpnb7miejo
+Command line:  cc /tmp/tmpnb7miejo/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __AVX2__
+        # define __AVX2__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX2__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Compiler stderr:
+ 
+Fetching value of define "__AVX2__" : 1 
+Running compile:
+Working directory:  /tmp/tmpt6ggn83x
+Command line:  cc /tmp/tmpt6ggn83x/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __AVX512BW__
+        # define __AVX512BW__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512BW__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Compiler stderr:
+ 
+Fetching value of define "__AVX512BW__" :  
+Running compile:
+Working directory:  /tmp/tmp13pbwhcw
+Command line:  cc /tmp/tmp13pbwhcw/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __AVX512CD__
+        # define __AVX512CD__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512CD__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Compiler stderr:
+ 
+Fetching value of define "__AVX512CD__" :  
+Running compile:
+Working directory:  /tmp/tmpda31kxuw
+Command line:  cc /tmp/tmpda31kxuw/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __AVX512DQ__
+        # define __AVX512DQ__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512DQ__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Compiler stderr:
+ 
+Fetching value of define "__AVX512DQ__" :  
+Running compile:
+Working directory:  /tmp/tmpj_x2wn3f
+Command line:  cc /tmp/tmpj_x2wn3f/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __AVX512F__
+        # define __AVX512F__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512F__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Compiler stderr:
+ 
+Fetching value of define "__AVX512F__" :  
+Running compile:
+Working directory:  /tmp/tmpiku11nb3
+Command line:  cc /tmp/tmpiku11nb3/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __AVX512VL__
+        # define __AVX512VL__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512VL__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Compiler stderr:
+ 
+Fetching value of define "__AVX512VL__" :  
+Running compile:
+Working directory:  /tmp/tmpkgt2k08p
+Command line:  cc /tmp/tmpkgt2k08p/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __PCLMUL__
+        # define __PCLMUL__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__PCLMUL__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Compiler stderr:
+ 
+Fetching value of define "__PCLMUL__" : 1 
+Running compile:
+Working directory:  /tmp/tmp3_95rvn5
+Command line:  cc /tmp/tmp3_95rvn5/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __RDRND__
+        # define __RDRND__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__RDRND__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Compiler stderr:
+ 
+Fetching value of define "__RDRND__" : 1 
+Running compile:
+Working directory:  /tmp/tmp6qqksmwg
+Command line:  cc /tmp/tmp6qqksmwg/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __RDSEED__
+        # define __RDSEED__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__RDSEED__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Compiler stderr:
+ 
+Fetching value of define "__RDSEED__" : 1 
+Running compile:
+Working directory:  /tmp/tmp_mpz2vpz
+Command line:  cc /tmp/tmp_mpz2vpz/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -march=native 
+
+Code:
+ 
+        
+        #ifndef __VPCLMULQDQ__
+        # define __VPCLMULQDQ__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__VPCLMULQDQ__
+Compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Compiler stderr:
+ 
+Fetching value of define "__VPCLMULQDQ__" : 1 
+Running command: /usr/bin/python3 /home/user/l2fwd-intl/external/dpdk/buildtools/list-dir-globs.py 
+--- stdout ---
+
+--- stderr ---
+
+
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp1qcel31z
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp1qcel31z/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp1qcel31z/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wformat-truncation -Wno-format-truncation 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-truncation: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpse0w7860
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpse0w7860/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpse0w7860/output.exe -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <unistd.h>
+#include <limits.h>
+
+        #if defined __stub_getentropy || defined __stub___getentropy
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &getentropy;
+            long long b = (long long) a;
+            return (int) b;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "getentropy" : YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __PCLMUL__
+        # define __PCLMUL__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__PCLMUL__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Cached compiler stderr:
+ 
+Fetching value of define "__PCLMUL__" : 1 (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX512F__
+        # define __AVX512F__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512F__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX512F__" :  (cached)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpb3bsv7rt
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpb3bsv7rt/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpb3bsv7rt/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -mpclmul 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -mpclmul: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpm4din7dq
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpm4din7dq/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpm4din7dq/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -maes 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -maes: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -mavx512f: YES (cached)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpz7g2bltw
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpz7g2bltw/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpz7g2bltw/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -mavx512bw 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -mavx512bw: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpd1_olmak
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpd1_olmak/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpd1_olmak/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -mavx512dq 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -mavx512dq: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpucnlpg86
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpucnlpg86/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpucnlpg86/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -mavx512vl 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -mavx512vl: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp4sowtz4d
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp4sowtz4d/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp4sowtz4d/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -mvpclmulqdq 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -mvpclmulqdq: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpn61ozeej
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpn61ozeej/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpn61ozeej/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -mavx2 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -mavx2: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpykcbcjn4
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpykcbcjn4/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpykcbcjn4/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -mavx 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -mavx: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX2__
+        # define __AVX2__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX2__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX2__" : 1 (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX512F__
+        # define __AVX512F__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512F__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX512F__" :  (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX512VL__
+        # define __AVX512VL__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512VL__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX512VL__" :  (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX512CD__
+        # define __AVX512CD__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512CD__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX512CD__" :  (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX512BW__
+        # define __AVX512BW__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512BW__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX512BW__" :  (cached)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpx6zdqm1f
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpx6zdqm1f/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpx6zdqm1f/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -mavx512f -mavx512vl -mavx512cd -mavx512bw 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -mavx512f -mavx512vl -mavx512cd -mavx512bw: YES 
+Pkg-config binary for 1 is cached.
+Determining dependency 'libelf' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --modversion libelf` -> 0
+0.185
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --cflags libelf` -> 0
+
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+Called `/usr/bin/pkg-config --libs libelf` -> 0
+-L/usr/lib64 -lelf
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --libs libelf` -> 0
+-lelf
+Run-time dependency libelf found: YES 0.185
+lib/bpf/meson.build:43: WARNING: libpcap is missing, rte_bpf_convert API will be disabled
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpllvnp3wt
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpllvnp3wt/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpllvnp3wt/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wcast-qual -Wno-cast-qual 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-cast-qual: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp93ruifse
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp93ruifse/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("linux/userfaultfd.h")
+          #error "Header 'linux/userfaultfd.h' could not be found"
+         #endif
+        #else
+         #include <linux/userfaultfd.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "linux/userfaultfd.h" : YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX512F__
+        # define __AVX512F__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512F__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX512F__" :  (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX512DQ__
+        # define __AVX512DQ__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512DQ__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX512DQ__" :  (cached)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmprce4vtqk
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmprce4vtqk/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmprce4vtqk/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -mavx512f -mavx512dq 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -mavx512f -mavx512dq: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -mavx512bw: YES (cached)
+Running command: /usr/bin/python3 /home/user/l2fwd-intl/external/dpdk/buildtools/list-dir-globs.py ,
+--- stdout ---
+
+--- stderr ---
+
+
+Running command: /usr/bin/python3 /home/user/l2fwd-intl/external/dpdk/buildtools/list-dir-globs.py ,
+--- stdout ---
+
+--- stderr ---
+
+
+Running command: /usr/bin/python3 /home/user/l2fwd-intl/external/dpdk/buildtools/list-dir-globs.py */*
+--- stdout ---
+common/qat
+common/mvep
+common/mlx5
+common/sfc_efx
+common/octeontx
+common/iavf
+common/cnxk
+common/cpt
+common/dpaax
+baseband/la12xx
+baseband/turbo_sw
+baseband/fpga_5gnr_fec
+baseband/acc100
+baseband/fpga_lte_fec
+baseband/null
+mempool/ring
+mempool/dpaa2
+mempool/octeontx
+mempool/cnxk
+mempool/bucket
+mempool/dpaa
+mempool/stack
+net/failsafe
+net/pcap
+net/tap
+net/hns3
+net/nfb
+net/ring
+net/ngbe
+net/dpaa2
+net/mlx4
+net/bnxt
+net/txgbe
+net/sfc
+net/igc
+net/mlx5
+net/liquidio
+net/af_xdp
+net/ark
+net/ena
+net/bonding
+net/cxgbe
+net/mvneta
+net/avp
+net/mvpp2
+net/virtio
+net/pfe
+net/enetc
+net/qede
+net/nfp
+net/netvsc
+net/octeontx
+net/iavf
+net/softnic
+net/cnxk
+net/enetfec
+net/thunderx
+net/i40e
+net/ixgbe
+net/ionic
+net/ipn3ke
+net/dpaa
+net/vhost
+net/af_packet
+net/ice
+net/atlantic
+net/vmxnet3
+net/axgbe
+net/kni
+net/enic
+net/vdev_netvsc
+net/null
+net/e1000
+net/octeontx_ep
+net/bnx2x
+net/memif
+net/fm10k
+net/hinic
+gpu/cuda
+crypto/qat
+crypto/scheduler
+crypto/mlx5
+crypto/nitrox
+crypto/armv8
+crypto/ipsec_mb
+crypto/openssl
+crypto/virtio
+crypto/mvsam
+crypto/octeontx
+crypto/cnxk
+crypto/dpaa2_sec
+crypto/caam_jr
+crypto/dpaa_sec
+crypto/bcmfs
+crypto/ccp
+crypto/null
+regex/mlx5
+regex/cn9k
+raw/cnxk_bphy
+raw/cnxk_gpio
+raw/dpaa2_cmdif
+raw/ntb
+raw/ifpga
+raw/dpaa2_qdma
+raw/skeleton
+raw/ioat
+bus/vdev
+bus/auxiliary
+bus/pci
+bus/vmbus
+bus/fslmc
+bus/dpaa
+bus/ifpga
+compress/qat
+compress/mlx5
+compress/zlib
+compress/octeontx
+compress/isal
+dma/idxd
+dma/cnxk
+dma/hisilicon
+dma/dpaa
+dma/skeleton
+dma/ioat
+event/dpaa2
+event/opdl
+event/dlb2
+event/octeontx
+event/cnxk
+event/dsw
+event/dpaa
+event/sw
+event/skeleton
+vdpa/ifc
+vdpa/sfc
+vdpa/mlx5
+
+--- stderr ---
+
+
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-truncation: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-cast-qual: YES (cached)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp_9df1ic9
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp_9df1ic9/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp_9df1ic9/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wpointer-arith -Wno-pointer-arith 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-pointer-arith: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp2v1y3kne
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp2v1y3kne/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp2v1y3kne/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wpointer-to-int-cast -Wno-pointer-to-int-cast 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-pointer-to-int-cast: YES 
+Pkg-config binary for 1 is cached.
+Determining dependency 'libmusdk' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --modversion libmusdk` -> 1
+
+Run-time dependency libmusdk found: NO (tried pkgconfig)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-cast-qual: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-pointer-arith: YES (cached)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpd38aqnb_
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpd38aqnb_/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpd38aqnb_/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=c11 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -std=c11: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpgta4bvhb
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpgta4bvhb/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpgta4bvhb/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wstrict-prototypes -Wno-strict-prototypes 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-prototypes: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpedt5tn13
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpedt5tn13/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpedt5tn13/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -D_BSD_SOURCE 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -D_BSD_SOURCE: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpe1jrbukk
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpe1jrbukk/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpe1jrbukk/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -D_DEFAULT_SOURCE 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -D_DEFAULT_SOURCE: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpqmn62tew
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpqmn62tew/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpqmn62tew/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -D_XOPEN_SOURCE=600 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -D_XOPEN_SOURCE=600: YES 
+Pkg-config binary for 1 is cached.
+Determining dependency 'libmlx5' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --modversion libmlx5` -> 0
+1.24.42.0
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --cflags libmlx5` -> 0
+
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+Called `/usr/bin/pkg-config --libs libmlx5` -> 0
+-L/usr/lib64 -lmlx5
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --libs libmlx5` -> 0
+-lmlx5
+Run-time dependency libmlx5 found: YES 1.24.42.0
+Pkg-config binary for 1 is cached.
+Determining dependency 'libibverbs' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --modversion libibverbs` -> 0
+1.14.42.0
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --cflags libibverbs` -> 0
+
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+Called `/usr/bin/pkg-config --libs libibverbs` -> 0
+-L/usr/lib64 -libverbs
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --libs libibverbs` -> 0
+-libverbs
+Run-time dependency libibverbs found: YES 1.14.42.0
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpgqpgc_59
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpgqpgc_59/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpgqpgc_59/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/verbs.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef IBV_ACCESS_RELAXED_ORDERING 
+                IBV_ACCESS_RELAXED_ORDERING ;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/verbs.h> has symbol "IBV_ACCESS_RELAXED_ORDERING " with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpvpxqqqmc
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpvpxqqqmc/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpvpxqqqmc/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef MLX5DV_CQE_RES_FORMAT_CSUM_STRIDX
+                MLX5DV_CQE_RES_FORMAT_CSUM_STRIDX;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "MLX5DV_CQE_RES_FORMAT_CSUM_STRIDX" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp87c5zr2k
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp87c5zr2k/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp87c5zr2k/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef MLX5DV_CONTEXT_MASK_TUNNEL_OFFLOADS
+                MLX5DV_CONTEXT_MASK_TUNNEL_OFFLOADS;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "MLX5DV_CONTEXT_MASK_TUNNEL_OFFLOADS" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp4ky6qdny
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp4ky6qdny/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp4ky6qdny/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef MLX5DV_CONTEXT_FLAGS_MPW_ALLOWED
+                MLX5DV_CONTEXT_FLAGS_MPW_ALLOWED;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "MLX5DV_CONTEXT_FLAGS_MPW_ALLOWED" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpeoszp7dc
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpeoszp7dc/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpeoszp7dc/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef MLX5DV_CONTEXT_FLAGS_CQE_128B_COMP
+                MLX5DV_CONTEXT_FLAGS_CQE_128B_COMP;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "MLX5DV_CONTEXT_FLAGS_CQE_128B_COMP" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp6uk4t6zx
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp6uk4t6zx/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp6uk4t6zx/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef MLX5DV_CQ_INIT_ATTR_FLAGS_CQE_PAD
+                MLX5DV_CQ_INIT_ATTR_FLAGS_CQE_PAD;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "MLX5DV_CQ_INIT_ATTR_FLAGS_CQE_PAD" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpp95acy_i
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpp95acy_i/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpp95acy_i/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef mlx5dv_create_flow_action_packet_reformat
+                mlx5dv_create_flow_action_packet_reformat;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "mlx5dv_create_flow_action_packet_reformat" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp1h1_3m7x
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp1h1_3m7x/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp1h1_3m7x/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/verbs.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef IBV_FLOW_SPEC_MPLS
+                IBV_FLOW_SPEC_MPLS;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/verbs.h> has symbol "IBV_FLOW_SPEC_MPLS" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpr088_ki_
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpr088_ki_/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpr088_ki_/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/verbs.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef IBV_WQ_FLAGS_PCI_WRITE_END_PADDING
+                IBV_WQ_FLAGS_PCI_WRITE_END_PADDING;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/verbs.h> has symbol "IBV_WQ_FLAGS_PCI_WRITE_END_PADDING" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpszfdctuq
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpszfdctuq/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpszfdctuq/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/verbs.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef IBV_WQ_FLAG_RX_END_PADDING
+                IBV_WQ_FLAG_RX_END_PADDING;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpszfdctuq/testfile.c: In function 'main':
+/home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpszfdctuq/testfile.c:6:17: error: 'IBV_WQ_FLAG_RX_END_PADDING' undeclared (first use in this function); did you mean 'IBV_WQ_FLAGS_PCI_WRITE_END_PADDING'?
+    6 |                 IBV_WQ_FLAG_RX_END_PADDING;
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                 IBV_WQ_FLAGS_PCI_WRITE_END_PADDING
+/home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpszfdctuq/testfile.c:6:17: note: each undeclared identifier is reported only once for each function it appears in
+
+Header <infiniband/verbs.h> has symbol "IBV_WQ_FLAG_RX_END_PADDING" with dependencies libmlx5, libibverbs: NO 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpg3df_lfn
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpg3df_lfn/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpg3df_lfn/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef mlx5dv_query_devx_port
+                mlx5dv_query_devx_port;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpg3df_lfn/testfile.c: In function 'main':
+/home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpg3df_lfn/testfile.c:6:17: error: 'mlx5dv_query_devx_port' undeclared (first use in this function); did you mean 'mlx5dv_query_port'?
+    6 |                 mlx5dv_query_devx_port;
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+      |                 mlx5dv_query_port
+/home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpg3df_lfn/testfile.c:6:17: note: each undeclared identifier is reported only once for each function it appears in
+
+Header <infiniband/mlx5dv.h> has symbol "mlx5dv_query_devx_port" with dependencies libmlx5, libibverbs: NO 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpk5tf9zc1
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpk5tf9zc1/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpk5tf9zc1/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef mlx5dv_query_port
+                mlx5dv_query_port;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "mlx5dv_query_port" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpxjf85t8g
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpxjf85t8g/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpxjf85t8g/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef mlx5dv_dr_action_create_dest_ib_port
+                mlx5dv_dr_action_create_dest_ib_port;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "mlx5dv_dr_action_create_dest_ib_port" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpm1iv47vq
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpm1iv47vq/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpm1iv47vq/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef mlx5dv_devx_obj_create
+                mlx5dv_devx_obj_create;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "mlx5dv_devx_obj_create" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpy2jy4e4y
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpy2jy4e4y/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpy2jy4e4y/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef MLX5DV_FLOW_ACTION_COUNTERS_DEVX
+                MLX5DV_FLOW_ACTION_COUNTERS_DEVX;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "MLX5DV_FLOW_ACTION_COUNTERS_DEVX" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpzozm154s
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpzozm154s/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpzozm154s/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef MLX5DV_FLOW_ACTION_DEFAULT_MISS
+                MLX5DV_FLOW_ACTION_DEFAULT_MISS;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "MLX5DV_FLOW_ACTION_DEFAULT_MISS" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpx7r9yeo8
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpx7r9yeo8/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpx7r9yeo8/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef mlx5dv_devx_obj_query_async
+                mlx5dv_devx_obj_query_async;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "mlx5dv_devx_obj_query_async" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpm4dsap7x
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpm4dsap7x/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpm4dsap7x/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef mlx5dv_devx_qp_query
+                mlx5dv_devx_qp_query;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "mlx5dv_devx_qp_query" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmprhk9qzwo
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmprhk9qzwo/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmprhk9qzwo/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef mlx5dv_pp_alloc
+                mlx5dv_pp_alloc;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "mlx5dv_pp_alloc" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmprqxvbofd
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmprqxvbofd/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmprqxvbofd/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef mlx5dv_dr_action_create_dest_devx_tir
+                mlx5dv_dr_action_create_dest_devx_tir;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "mlx5dv_dr_action_create_dest_devx_tir" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp9tzb_p_j
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp9tzb_p_j/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp9tzb_p_j/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef mlx5dv_devx_get_event
+                mlx5dv_devx_get_event;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "mlx5dv_devx_get_event" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpzqdaqy7c
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpzqdaqy7c/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpzqdaqy7c/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef mlx5dv_dr_action_create_flow_meter
+                mlx5dv_dr_action_create_flow_meter;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "mlx5dv_dr_action_create_flow_meter" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp78lc9uga
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp78lc9uga/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp78lc9uga/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef MLX5_MMAP_GET_NC_PAGES_CMD
+                MLX5_MMAP_GET_NC_PAGES_CMD;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "MLX5_MMAP_GET_NC_PAGES_CMD" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpofyb9kx0
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpofyb9kx0/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpofyb9kx0/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef MLX5DV_DR_DOMAIN_TYPE_NIC_RX
+                MLX5DV_DR_DOMAIN_TYPE_NIC_RX;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "MLX5DV_DR_DOMAIN_TYPE_NIC_RX" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp5awn_ipj
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp5awn_ipj/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp5awn_ipj/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef MLX5DV_DR_DOMAIN_TYPE_FDB
+                MLX5DV_DR_DOMAIN_TYPE_FDB;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "MLX5DV_DR_DOMAIN_TYPE_FDB" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp7342zbqh
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp7342zbqh/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp7342zbqh/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef mlx5dv_dr_action_create_push_vlan
+                mlx5dv_dr_action_create_push_vlan;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "mlx5dv_dr_action_create_push_vlan" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpldk5udwt
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpldk5udwt/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpldk5udwt/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef mlx5dv_alloc_var
+                mlx5dv_alloc_var;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "mlx5dv_alloc_var" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpmwkn1fa5
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpmwkn1fa5/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpmwkn1fa5/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef MLX5_OPCODE_ENHANCED_MPSW
+                MLX5_OPCODE_ENHANCED_MPSW;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpmwkn1fa5/testfile.c: In function 'main':
+/home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpmwkn1fa5/testfile.c:6:17: error: 'MLX5_OPCODE_ENHANCED_MPSW' undeclared (first use in this function); did you mean 'MLX5_OPCODE_SET_PSV'?
+    6 |                 MLX5_OPCODE_ENHANCED_MPSW;
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                 MLX5_OPCODE_SET_PSV
+/home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpmwkn1fa5/testfile.c:6:17: note: each undeclared identifier is reported only once for each function it appears in
+
+Header <infiniband/mlx5dv.h> has symbol "MLX5_OPCODE_ENHANCED_MPSW" with dependencies libmlx5, libibverbs: NO 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp4p3h32nc
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp4p3h32nc/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp4p3h32nc/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef MLX5_OPCODE_SEND_EN
+                MLX5_OPCODE_SEND_EN;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp4p3h32nc/testfile.c: In function 'main':
+/home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp4p3h32nc/testfile.c:6:17: error: 'MLX5_OPCODE_SEND_EN' undeclared (first use in this function); did you mean 'MLX5_OPCODE_SEND_IMM'?
+    6 |                 MLX5_OPCODE_SEND_EN;
+      |                 ^~~~~~~~~~~~~~~~~~~
+      |                 MLX5_OPCODE_SEND_IMM
+/home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp4p3h32nc/testfile.c:6:17: note: each undeclared identifier is reported only once for each function it appears in
+
+Header <infiniband/mlx5dv.h> has symbol "MLX5_OPCODE_SEND_EN" with dependencies libmlx5, libibverbs: NO 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmphdjtsvj9
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmphdjtsvj9/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmphdjtsvj9/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef MLX5_OPCODE_WAIT
+                MLX5_OPCODE_WAIT;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmphdjtsvj9/testfile.c: In function 'main':
+/home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmphdjtsvj9/testfile.c:6:17: error: 'MLX5_OPCODE_WAIT' undeclared (first use in this function); did you mean 'MLX5_OPCODE_MMO'?
+    6 |                 MLX5_OPCODE_WAIT;
+      |                 ^~~~~~~~~~~~~~~~
+      |                 MLX5_OPCODE_MMO
+/home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmphdjtsvj9/testfile.c:6:17: note: each undeclared identifier is reported only once for each function it appears in
+
+Header <infiniband/mlx5dv.h> has symbol "MLX5_OPCODE_WAIT" with dependencies libmlx5, libibverbs: NO 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpsiqnervo
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpsiqnervo/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpsiqnervo/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef MLX5_OPCODE_ACCESS_ASO
+                MLX5_OPCODE_ACCESS_ASO;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpsiqnervo/testfile.c: In function 'main':
+/home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpsiqnervo/testfile.c:6:17: error: 'MLX5_OPCODE_ACCESS_ASO' undeclared (first use in this function); did you mean 'MLX5_OPCODE_SET_PSV'?
+    6 |                 MLX5_OPCODE_ACCESS_ASO;
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+      |                 MLX5_OPCODE_SET_PSV
+/home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpsiqnervo/testfile.c:6:17: note: each undeclared identifier is reported only once for each function it appears in
+
+Header <infiniband/mlx5dv.h> has symbol "MLX5_OPCODE_ACCESS_ASO" with dependencies libmlx5, libibverbs: NO 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp84gh3zm0
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp84gh3zm0/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp84gh3zm0/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/ethtool.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef SUPPORTED_40000baseKR4_Full
+                SUPPORTED_40000baseKR4_Full;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/ethtool.h> has symbol "SUPPORTED_40000baseKR4_Full" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp8l8bozyr
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp8l8bozyr/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp8l8bozyr/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/ethtool.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef SUPPORTED_40000baseCR4_Full
+                SUPPORTED_40000baseCR4_Full;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/ethtool.h> has symbol "SUPPORTED_40000baseCR4_Full" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpezaeu_fh
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpezaeu_fh/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpezaeu_fh/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/ethtool.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef SUPPORTED_40000baseSR4_Full
+                SUPPORTED_40000baseSR4_Full;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/ethtool.h> has symbol "SUPPORTED_40000baseSR4_Full" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp56a5eczs
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp56a5eczs/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp56a5eczs/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/ethtool.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef SUPPORTED_40000baseLR4_Full
+                SUPPORTED_40000baseLR4_Full;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/ethtool.h> has symbol "SUPPORTED_40000baseLR4_Full" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp_wj16csk
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp_wj16csk/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp_wj16csk/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/ethtool.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef SUPPORTED_56000baseKR4_Full
+                SUPPORTED_56000baseKR4_Full;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/ethtool.h> has symbol "SUPPORTED_56000baseKR4_Full" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpot9oaqwk
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpot9oaqwk/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpot9oaqwk/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/ethtool.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef SUPPORTED_56000baseCR4_Full
+                SUPPORTED_56000baseCR4_Full;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/ethtool.h> has symbol "SUPPORTED_56000baseCR4_Full" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpqgk1nm1d
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpqgk1nm1d/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpqgk1nm1d/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/ethtool.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef SUPPORTED_56000baseSR4_Full
+                SUPPORTED_56000baseSR4_Full;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/ethtool.h> has symbol "SUPPORTED_56000baseSR4_Full" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmprjy9r05x
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmprjy9r05x/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmprjy9r05x/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/ethtool.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef SUPPORTED_56000baseLR4_Full
+                SUPPORTED_56000baseLR4_Full;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/ethtool.h> has symbol "SUPPORTED_56000baseLR4_Full" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp747cvw_p
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp747cvw_p/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp747cvw_p/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/ethtool.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef ETHTOOL_LINK_MODE_25000baseCR_Full_BIT
+                ETHTOOL_LINK_MODE_25000baseCR_Full_BIT;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/ethtool.h> has symbol "ETHTOOL_LINK_MODE_25000baseCR_Full_BIT" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpyjlu4_ax
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpyjlu4_ax/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpyjlu4_ax/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/ethtool.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef ETHTOOL_LINK_MODE_50000baseCR2_Full_BIT
+                ETHTOOL_LINK_MODE_50000baseCR2_Full_BIT;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/ethtool.h> has symbol "ETHTOOL_LINK_MODE_50000baseCR2_Full_BIT" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpm1txybrb
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpm1txybrb/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpm1txybrb/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/ethtool.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef ETHTOOL_LINK_MODE_100000baseKR4_Full_BIT
+                ETHTOOL_LINK_MODE_100000baseKR4_Full_BIT;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/ethtool.h> has symbol "ETHTOOL_LINK_MODE_100000baseKR4_Full_BIT" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpgapafm1x
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpgapafm1x/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpgapafm1x/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/if_link.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef IFLA_NUM_VF
+                IFLA_NUM_VF;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/if_link.h> has symbol "IFLA_NUM_VF" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmph7hxspi5
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmph7hxspi5/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmph7hxspi5/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/if_link.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef IFLA_EXT_MASK
+                IFLA_EXT_MASK;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/if_link.h> has symbol "IFLA_EXT_MASK" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpqae0e2qh
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpqae0e2qh/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpqae0e2qh/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/if_link.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef IFLA_PHYS_SWITCH_ID
+                IFLA_PHYS_SWITCH_ID;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/if_link.h> has symbol "IFLA_PHYS_SWITCH_ID" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp1ep9pr8k
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp1ep9pr8k/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp1ep9pr8k/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/if_link.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef IFLA_PHYS_PORT_NAME
+                IFLA_PHYS_PORT_NAME;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/if_link.h> has symbol "IFLA_PHYS_PORT_NAME" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp0hf_bqbl
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp0hf_bqbl/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp0hf_bqbl/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <rdma/rdma_netlink.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef RDMA_NL_NLDEV
+                RDMA_NL_NLDEV;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <rdma/rdma_netlink.h> has symbol "RDMA_NL_NLDEV" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpnkst6x7c
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpnkst6x7c/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpnkst6x7c/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <rdma/rdma_netlink.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef RDMA_NLDEV_CMD_GET
+                RDMA_NLDEV_CMD_GET;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <rdma/rdma_netlink.h> has symbol "RDMA_NLDEV_CMD_GET" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpmbi7oz03
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpmbi7oz03/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpmbi7oz03/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <rdma/rdma_netlink.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef RDMA_NLDEV_CMD_PORT_GET
+                RDMA_NLDEV_CMD_PORT_GET;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <rdma/rdma_netlink.h> has symbol "RDMA_NLDEV_CMD_PORT_GET" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpwmcjdxu5
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpwmcjdxu5/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpwmcjdxu5/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <rdma/rdma_netlink.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef RDMA_NLDEV_ATTR_DEV_INDEX
+                RDMA_NLDEV_ATTR_DEV_INDEX;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <rdma/rdma_netlink.h> has symbol "RDMA_NLDEV_ATTR_DEV_INDEX" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpryamz6lr
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpryamz6lr/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpryamz6lr/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <rdma/rdma_netlink.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef RDMA_NLDEV_ATTR_DEV_NAME
+                RDMA_NLDEV_ATTR_DEV_NAME;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <rdma/rdma_netlink.h> has symbol "RDMA_NLDEV_ATTR_DEV_NAME" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpbby2jg8v
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpbby2jg8v/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpbby2jg8v/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <rdma/rdma_netlink.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef RDMA_NLDEV_ATTR_PORT_INDEX
+                RDMA_NLDEV_ATTR_PORT_INDEX;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <rdma/rdma_netlink.h> has symbol "RDMA_NLDEV_ATTR_PORT_INDEX" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpgkoof2hu
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpgkoof2hu/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpgkoof2hu/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <rdma/rdma_netlink.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef RDMA_NLDEV_ATTR_PORT_STATE
+                RDMA_NLDEV_ATTR_PORT_STATE;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <rdma/rdma_netlink.h> has symbol "RDMA_NLDEV_ATTR_PORT_STATE" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpcvbiybr_
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpcvbiybr_/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpcvbiybr_/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <rdma/rdma_netlink.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef RDMA_NLDEV_ATTR_NDEV_INDEX
+                RDMA_NLDEV_ATTR_NDEV_INDEX;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <rdma/rdma_netlink.h> has symbol "RDMA_NLDEV_ATTR_NDEV_INDEX" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpjmqca36r
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpjmqca36r/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpjmqca36r/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef mlx5dv_dump_dr_domain
+                mlx5dv_dump_dr_domain;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "mlx5dv_dump_dr_domain" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpxqlty466
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpxqlty466/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpxqlty466/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef mlx5dv_dr_action_create_flow_sampler
+                mlx5dv_dr_action_create_flow_sampler;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "mlx5dv_dr_action_create_flow_sampler" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp7x6d4r18
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp7x6d4r18/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp7x6d4r18/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef mlx5dv_dr_domain_set_reclaim_device_memory
+                mlx5dv_dr_domain_set_reclaim_device_memory;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "mlx5dv_dr_domain_set_reclaim_device_memory" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp0veq2l86
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp0veq2l86/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp0veq2l86/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef mlx5dv_dr_action_create_dest_array
+                mlx5dv_dr_action_create_dest_array;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "mlx5dv_dr_action_create_dest_array" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpdyxoaboa
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpdyxoaboa/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpdyxoaboa/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/devlink.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef DEVLINK_GENL_NAME
+                DEVLINK_GENL_NAME;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/devlink.h> has symbol "DEVLINK_GENL_NAME" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpk6ln7hnf
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpk6ln7hnf/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpk6ln7hnf/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef mlx5dv_dr_action_create_aso
+                mlx5dv_dr_action_create_aso;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "mlx5dv_dr_action_create_aso" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpefyqmwmc
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpefyqmwmc/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpefyqmwmc/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/verbs.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef INFINIBAND_VERBS_H
+                INFINIBAND_VERBS_H;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/verbs.h> has symbol "INFINIBAND_VERBS_H" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp3z460h55
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp3z460h55/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp3z460h55/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef MLX5_WQE_UMR_CTRL_FLAG_INLINE
+                MLX5_WQE_UMR_CTRL_FLAG_INLINE;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "MLX5_WQE_UMR_CTRL_FLAG_INLINE" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp960v0bmq
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp960v0bmq/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp960v0bmq/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef mlx5dv_dump_dr_rule
+                mlx5dv_dump_dr_rule;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "mlx5dv_dump_dr_rule" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpjkoyv3i4
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpjkoyv3i4/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpjkoyv3i4/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef MLX5DV_DR_ACTION_FLAGS_ASO_CT_DIRECTION_INITIATOR
+                MLX5DV_DR_ACTION_FLAGS_ASO_CT_DIRECTION_INITIATOR;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "MLX5DV_DR_ACTION_FLAGS_ASO_CT_DIRECTION_INITIATOR" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp8ph9g5nj
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp8ph9g5nj/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp8ph9g5nj/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx5dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef mlx5dv_dr_domain_allow_duplicate_rules
+                mlx5dv_dr_domain_allow_duplicate_rules;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx5dv.h> has symbol "mlx5dv_dr_domain_allow_duplicate_rules" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp6gp2la7x
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp6gp2la7x/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp6gp2la7x/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/verbs.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef ibv_reg_mr_iova
+                ibv_reg_mr_iova;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/verbs.h> has symbol "ibv_reg_mr_iova" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpb6g4ugg4
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpb6g4ugg4/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpb6g4ugg4/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/verbs.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef ibv_import_device
+                ibv_import_device;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/verbs.h> has symbol "ibv_import_device" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp5ku7kb2k
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp5ku7kb2k/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp5ku7kb2k/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <infiniband/mlx5dv.h>
+        void bar(void) {
+            struct mlx5dv_sw_parsing_caps foo;
+            foo.sw_parsing_offloads;
+
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking whether type "struct mlx5dv_sw_parsing_caps" has member "sw_parsing_offloads" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpmkjofe0x
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpmkjofe0x/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpmkjofe0x/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <infiniband/verbs.h>
+        void bar(void) {
+            struct ibv_counter_set_init_attr foo;
+            foo.counter_set_id;
+
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpmkjofe0x/testfile.c: In function 'bar':
+/home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpmkjofe0x/testfile.c:3:46: error: storage size of 'foo' isn't known
+    3 |             struct ibv_counter_set_init_attr foo;
+      |                                              ^~~
+
+Checking whether type "struct ibv_counter_set_init_attr" has member "counter_set_id" with dependencies libmlx5, libibverbs: NO 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpovrf75mq
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpovrf75mq/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpovrf75mq/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <infiniband/verbs.h>
+        void bar(void) {
+            struct ibv_counters_init_attr foo;
+            foo.comp_mask;
+
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking whether type "struct ibv_counters_init_attr" has member "comp_mask" with dependencies libmlx5, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp6gvxqipn
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp6gvxqipn/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp6gvxqipn/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <infiniband/mlx5dv.h>
+        void bar(void) {
+            struct mlx5dv_devx_uar foo;
+            foo.mmap_off;
+
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking whether type "struct mlx5dv_devx_uar" has member "mmap_off" with dependencies libmlx5, libibverbs: YES 
+Configuring mlx5_autoconf.h using configuration
+Pkg-config binary for 1 is cached.
+Determining dependency 'libcrypto' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --modversion libcrypto` -> 0
+1.1.1l
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --cflags libcrypto` -> 0
+-DOPENSSL_LOAD_CONF
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+Called `/usr/bin/pkg-config --libs libcrypto` -> 0
+-L/usr/lib64 -lcrypto
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --libs libcrypto` -> 0
+-lcrypto
+Run-time dependency libcrypto found: YES 1.1.1l
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpdatqdc1y
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpdatqdc1y/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpdatqdc1y/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wdisabled-optimization 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wdisabled-optimization: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpzcwhumw9
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpzcwhumw9/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpzcwhumw9/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Waggregate-return 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Waggregate-return: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpixpy8oz2
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpixpy8oz2/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpixpy8oz2/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wbad-function-cast 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wbad-function-cast: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp19vpcwpl
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp19vpcwpl/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp19vpcwpl/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wsign-compare -Wno-sign-compare 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-sign-compare: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpnf1wji1u
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpnf1wji1u/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpnf1wji1u/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wunused-parameter -Wno-unused-parameter 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp0re6f10m
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp0re6f10m/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp0re6f10m/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wunused-variable -Wno-unused-variable 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-variable: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpygp4wqi6
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpygp4wqi6/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpygp4wqi6/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wempty-body -Wno-empty-body 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-empty-body: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpo0b7ikav
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpo0b7ikav/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpo0b7ikav/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wunused-but-set-variable -Wno-unused-but-set-variable 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-but-set-variable: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-pointer-arith: YES (cached)
+Pkg-config binary for 1 is cached.
+Determining dependency 'libxdp' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --modversion libxdp` -> 1
+
+Run-time dependency libxdp found: NO (tried pkgconfig)
+Pkg-config binary for 1 is cached.
+Determining dependency 'libbpf' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --modversion libbpf` -> 1
+
+Run-time dependency libbpf found: NO (tried pkgconfig)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp1t4n1dxx
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp1t4n1dxx/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp1t4n1dxx/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lbpf -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/lib64/gcc/x86_64-suse-linux/13/../../../../x86_64-suse-linux/bin/ld: cannot find -lbpf: No such file or directory
+collect2: error: ld returned 1 exit status
+
+Library bpf found: NO
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmprj9fwz9r
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmprj9fwz9r/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("linux/if_xdp.h")
+          #error "Header 'linux/if_xdp.h' could not be found"
+         #endif
+        #else
+         #include <linux/if_xdp.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "linux/if_xdp.h" : YES 
+Pkg-config binary for 1 is cached.
+Determining dependency 'zlib' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --modversion zlib` -> 0
+1.2.13
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --cflags zlib` -> 0
+
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+Called `/usr/bin/pkg-config --libs zlib` -> 0
+-L/usr/lib64 -lz
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --libs zlib` -> 0
+-lz
+Run-time dependency zlib found: YES 1.2.13
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpxgoaxi3m
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpxgoaxi3m/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpxgoaxi3m/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -DSUPPORT_CFA_HW_ALL=1 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -DSUPPORT_CFA_HW_ALL=1: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX2__
+        # define __AVX2__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX2__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX2__" : 1 (cached)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpj6c1kue_
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpj6c1kue_/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpj6c1kue_/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -flax-vector-conversions 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -flax-vector-conversions: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp3drbxhvn
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp3drbxhvn/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp3drbxhvn/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wstrict-aliasing -Wno-strict-aliasing 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-aliasing: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-pointer-arith: YES (cached)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp4l6kig7r
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp4l6kig7r/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp4l6kig7r/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wuninitialized -Wno-uninitialized 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-uninitialized: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-parameter: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-variable: YES (cached)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp53lhhppf
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp53lhhppf/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp53lhhppf/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wmisleading-indentation -Wno-misleading-indentation 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-misleading-indentation: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp0fcm6ey6
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp0fcm6ey6/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp0fcm6ey6/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wimplicit-fallthrough -Wno-implicit-fallthrough 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-implicit-fallthrough: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX2__
+        # define __AVX2__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX2__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX2__" : 1 (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-parameter: YES (cached)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp8r2voig8
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp8r2voig8/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp8r2voig8/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wunused-value -Wno-unused-value 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-value: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-aliasing: YES (cached)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpi5y42i8m
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpi5y42i8m/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpi5y42i8m/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wformat-extra-args -Wno-format-extra-args 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-extra-args: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-variable: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-implicit-fallthrough: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-sign-compare: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-value: YES (cached)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpvpwum2ai
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpvpwum2ai/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpvpwum2ai/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wformat -Wno-format 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp0y7yfjzf
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp0y7yfjzf/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp0y7yfjzf/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wformat-security -Wno-format-security 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-security: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpzctuewyu
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpzctuewyu/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpzctuewyu/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wformat-nonliteral -Wno-format-nonliteral 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-nonliteral: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-aliasing: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-but-set-variable: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-parameter: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX2__
+        # define __AVX2__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX2__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX2__" : 1 (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX512F__
+        # define __AVX512F__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512F__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX512F__" :  (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -mavx512f: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -mavx512bw: YES (cached)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp3lmraldb
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp3lmraldb/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp3lmraldb/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -march=skylake-avx512 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -march=skylake-avx512: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX2__
+        # define __AVX2__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX2__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX2__" : 1 (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX512F__
+        # define __AVX512F__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512F__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX512F__" :  (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -mavx512f: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -mavx512bw: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -march=skylake-avx512: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-value: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-but-set-variable: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-variable: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-parameter: YES (cached)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpwfi7w86v
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpwfi7w86v/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpwfi7w86v/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Warray-bounds -Wno-array-bounds 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-array-bounds: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX2__
+        # define __AVX2__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX2__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+1
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX2__" : 1 (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        
+        #ifndef __AVX512F__
+        # define __AVX512F__
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+__AVX512F__
+Cached compiler stdout:
+         "MESON_GET_DEFINE_DELIMITER"
+
+
+Cached compiler stderr:
+ 
+Fetching value of define "__AVX512F__" :  (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -mavx512f: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -mavx512bw: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -march=skylake-avx512: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-value: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-but-set-variable: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-parameter: YES (cached)
+Pkg-config binary for 1 is cached.
+Determining dependency 'libmlx4' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --modversion libmlx4` -> 0
+1.0.42.0
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --cflags libmlx4` -> 0
+
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+Called `/usr/bin/pkg-config --libs libmlx4` -> 0
+-L/usr/lib64 -lmlx4
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --libs libmlx4` -> 0
+-lmlx4
+Run-time dependency libmlx4 found: YES 1.0.42.0
+Dependency libibverbs found: YES 1.14.42.0 (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -std=c11: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-prototypes: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_BSD_SOURCE: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_DEFAULT_SOURCE: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_XOPEN_SOURCE=600: YES (cached)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpngo7z36_
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpngo7z36_/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpngo7z36_/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx4dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef MLX4DV_SET_CTX_ATTR_BUF_ALLOCATORS
+                MLX4DV_SET_CTX_ATTR_BUF_ALLOCATORS;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx4dv.h> has symbol "MLX4DV_SET_CTX_ATTR_BUF_ALLOCATORS" with dependencies libmlx4, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp56p_hmpi
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp56p_hmpi/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp56p_hmpi/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <infiniband/mlx4dv.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef MLX4DV_QP_MASK_UAR_MMAP_OFFSET
+                MLX4DV_QP_MASK_UAR_MMAP_OFFSET;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <infiniband/mlx4dv.h> has symbol "MLX4DV_QP_MASK_UAR_MMAP_OFFSET" with dependencies libmlx4, libibverbs: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp4_2oha9k
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp4_2oha9k/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp4_2oha9k/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <infiniband/mlx4dv.h>
+        void bar(void) {
+            struct mlx4_wqe_lso_seg foo;
+            foo.mss_hdr_size;
+
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking whether type "struct mlx4_wqe_lso_seg" has member "mss_hdr_size" with dependencies libmlx4, libibverbs: YES 
+Configuring mlx4_autoconf.h using configuration
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -std=c11: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-prototypes: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_BSD_SOURCE: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_DEFAULT_SOURCE: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_XOPEN_SOURCE=600: YES (cached)
+Pkg-config binary for 1 is cached.
+Determining dependency 'libmusdk' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Run-time dependency libmusdk found: NO (tried pkgconfig)
+Pkg-config binary for 1 is cached.
+Determining dependency 'libmusdk' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Run-time dependency libmusdk found: NO (tried pkgconfig)
+Pkg-config binary for 1 is cached.
+Determining dependency 'netcope-common' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --modversion netcope-common` -> 1
+
+Run-time dependency netcope-common found: NO (tried pkgconfig)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-pointer-arith: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-parameter: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-sign-compare: YES (cached)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp7u904cwe
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp7u904cwe/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp7u904cwe/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-prototypes -Wno-missing-prototypes 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-missing-prototypes: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-cast-qual: YES (cached)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpihurogg4
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpihurogg4/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpihurogg4/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wunused-function -Wno-unused-function 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-function: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-variable: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-aliasing: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-missing-prototypes: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-value: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-nonliteral: YES (cached)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpre9ifwvd
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpre9ifwvd/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpre9ifwvd/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wshift-negative-value -Wno-shift-negative-value 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-shift-negative-value: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-but-set-variable: YES (cached)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmprr095k5i
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmprr095k5i/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmprr095k5i/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-declarations -Wno-missing-declarations 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-missing-declarations: YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp2gse_940
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp2gse_940/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp2gse_940/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wmaybe-uninitialized -Wno-maybe-uninitialized 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-maybe-uninitialized: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-prototypes: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-shift-negative-value: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-implicit-fallthrough: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-extra-args: YES (cached)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpz9c0157g
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpz9c0157g/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpz9c0157g/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wvisibility -Wno-visibility 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc: error: unrecognized command-line option '-Wvisibility'; did you mean '--visibility='?
+
+Compiler for C supports arguments -Wno-visibility: NO 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-empty-body: YES (cached)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpqt8a4zgf
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpqt8a4zgf/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpqt8a4zgf/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Winvalid-source-encoding -Wno-invalid-source-encoding 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc: error: unrecognized command-line option '-Winvalid-source-encoding'
+
+Compiler for C supports arguments -Wno-invalid-source-encoding: NO 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpd3hezb4j
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpd3hezb4j/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpd3hezb4j/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wsometimes-uninitialized -Wno-sometimes-uninitialized 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc: error: unrecognized command-line option '-Wsometimes-uninitialized'; did you mean '-Wmaybe-uninitialized'?
+
+Compiler for C supports arguments -Wno-sometimes-uninitialized: NO 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpvcyfpk95
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpvcyfpk95/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpvcyfpk95/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wpointer-bool-conversion -Wno-pointer-bool-conversion 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc: error: unrecognized command-line option '-Wpointer-bool-conversion'
+
+Compiler for C supports arguments -Wno-pointer-bool-conversion: NO 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-nonliteral: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-aliasing: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wdisabled-optimization: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Waggregate-return: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wbad-function-cast: YES (cached)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmprcek6252
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmprcek6252/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmprcek6252/output.exe -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+int main(void)
+{
+    __int128 a = 0;
+    __int128 b;
+
+    b = __atomic_load_n(&a, __ATOMIC_RELAXED);
+    __atomic_store(&b, &a, __ATOMIC_RELAXED);
+    __atomic_store_n(&b, a, __ATOMIC_RELAXED);
+    return 0;
+}
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/lib64/gcc/x86_64-suse-linux/13/../../../../x86_64-suse-linux/bin/ld: /tmp/ccAERu83.o: in function `main':
+testfile.c:(.text+0x26): undefined reference to `__atomic_load_16'
+/usr/lib64/gcc/x86_64-suse-linux/13/../../../../x86_64-suse-linux/bin/ld: testfile.c:(.text+0x50): undefined reference to `__atomic_store_16'
+/usr/lib64/gcc/x86_64-suse-linux/13/../../../../x86_64-suse-linux/bin/ld: testfile.c:(.text+0x72): undefined reference to `__atomic_store_16'
+collect2: error: ld returned 1 exit status
+
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp2qsh4rbd
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp2qsh4rbd/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp2qsh4rbd/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -latomic -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library atomic found: YES
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp1kdikw66
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp1kdikw66/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp1kdikw66/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -latomic -Wl,--end-group 
+
+Code:
+ 
+int main(void)
+{
+    __int128 a = 0;
+    __int128 b;
+
+    b = __atomic_load_n(&a, __ATOMIC_RELAXED);
+    __atomic_store(&b, &a, __ATOMIC_RELAXED);
+    __atomic_store_n(&b, a, __ATOMIC_RELAXED);
+    return 0;
+}
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp782bdf9b
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp782bdf9b/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmp782bdf9b/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/pkt_cls.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef TCA_FLOWER_UNSPEC
+                TCA_FLOWER_UNSPEC;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/pkt_cls.h> has symbol "TCA_FLOWER_UNSPEC" : YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpnpr6atod
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpnpr6atod/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpnpr6atod/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/pkt_cls.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef TCA_FLOWER_KEY_VLAN_PRIO
+                TCA_FLOWER_KEY_VLAN_PRIO;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/pkt_cls.h> has symbol "TCA_FLOWER_KEY_VLAN_PRIO" : YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpuxm7hfvd
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpuxm7hfvd/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpuxm7hfvd/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/pkt_cls.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef TCA_BPF_UNSPEC
+                TCA_BPF_UNSPEC;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/pkt_cls.h> has symbol "TCA_BPF_UNSPEC" : YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpsif0w8ya
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpsif0w8ya/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpsif0w8ya/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/pkt_cls.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef TCA_BPF_FD
+                TCA_BPF_FD;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/pkt_cls.h> has symbol "TCA_BPF_FD" : YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmph7_hpjoe
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmph7_hpjoe/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmph7_hpjoe/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/tc_act/tc_bpf.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef TCA_ACT_BPF_UNSPEC
+                TCA_ACT_BPF_UNSPEC;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/tc_act/tc_bpf.h> has symbol "TCA_ACT_BPF_UNSPEC" : YES 
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpy9pma67a
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpy9pma67a/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpy9pma67a/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <linux/tc_act/tc_bpf.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef TCA_ACT_BPF_FD
+                TCA_ACT_BPF_FD;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <linux/tc_act/tc_bpf.h> has symbol "TCA_ACT_BPF_FD" : YES 
+Configuring tap_autoconf.h using configuration
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpc3z4qw17
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpc3z4qw17/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpc3z4qw17/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fno-prefetch-loop-arrays 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -fno-prefetch-loop-arrays: YES 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-maybe-uninitialized: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_BSD_SOURCE: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_DEFAULT_SOURCE: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_XOPEN_SOURCE=600: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -mavx512f: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -mavx512vl: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -mavx512bw: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-parameter: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-value: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-aliasing: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-extra-args: YES (cached)
+Pkg-config binary for 1 is cached.
+Determining dependency 'libAArch64crypto' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --modversion libAArch64crypto` -> 1
+
+Run-time dependency libaarch64crypto found: NO (tried pkgconfig)
+Dependency libcrypto found: YES 1.1.1l (cached)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpa3gg3xu0
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpa3gg3xu0/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpa3gg3xu0/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lIPSec_MB -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/lib64/gcc/x86_64-suse-linux/13/../../../../x86_64-suse-linux/bin/ld: cannot find -lIPSec_MB: No such file or directory
+collect2: error: ld returned 1 exit status
+
+Library IPSec_MB found: NO
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -std=c11: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-prototypes: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_BSD_SOURCE: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_DEFAULT_SOURCE: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_XOPEN_SOURCE=600: YES (cached)
+Pkg-config binary for 1 is cached.
+Determining dependency 'libmusdk' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Run-time dependency libmusdk found: NO (tried pkgconfig)
+Dependency libcrypto found: YES 1.1.1l (cached)
+Pkg-config binary for 1 is cached.
+Determining dependency 'libisal' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /opt/intel/oneapi/vtune/2023.2.0/include/pkgconfig/lib64:/opt/intel/oneapi/tbb/2021.10.0/env/../lib/pkgconfig:/opt/intel/oneapi/mpi/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/mkl/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/ippcp/2021.8.0/lib/pkgconfig:/opt/intel/oneapi/dpl/2022.2.0/lib/pkgconfig:/opt/intel/oneapi/dnnl/2023.2.0/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/opt/intel/oneapi/dal/2023.2.0/lib/pkgconfig:/opt/intel/oneapi/compiler/2023.2.1/lib/pkgconfig:/opt/intel/oneapi/ccl/2021.10.0/lib/pkgconfig:/opt/intel/oneapi/advisor/2023.2.0/include/pkgconfig/lib64
+Called `/usr/bin/pkg-config --modversion libisal` -> 1
+
+Run-time dependency libisal found: NO (tried pkgconfig)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -std=c11: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-prototypes: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_BSD_SOURCE: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_DEFAULT_SOURCE: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_XOPEN_SOURCE=600: YES (cached)
+Dependency zlib found: YES 1.2.13 (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -std=c11: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-prototypes: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_BSD_SOURCE: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_DEFAULT_SOURCE: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_XOPEN_SOURCE=600: YES (cached)
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpxyixyoel
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpxyixyoel/testfile.c -o /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpxyixyoel/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -llibrxp_compiler -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/lib64/gcc/x86_64-suse-linux/13/../../../../x86_64-suse-linux/bin/ld: cannot find -llibrxp_compiler: No such file or directory
+collect2: error: ld returned 1 exit status
+
+Library librxp_compiler found: NO
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -std=c11: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-prototypes: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_BSD_SOURCE: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_DEFAULT_SOURCE: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -D_XOPEN_SOURCE=600: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -flax-vector-conversions: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-aliasing: YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-nonliteral: YES (cached)
+Library libturbo found: NO
+Library libldpc_decoder_5gnr found: NO
+Running compile:
+Working directory:  /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpsfhbx_5f
+Command line:  cc /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpsfhbx_5f/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("gdrapi.h")
+          #error "Header 'gdrapi.h' could not be found"
+         #endif
+        #else
+         #include <gdrapi.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/l2fwd-intl/external/dpdk/clean/meson-private/tmpsfhbx_5f/testfile.c:4:12: error: #error "Header 'gdrapi.h' could not be found"
+    4 |           #error "Header 'gdrapi.h' could not be found"
+      |            ^~~~~
+
+Has header "gdrapi.h" : NO 
+Using cached compile:
+Cached command line:   
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-truncation: YES (cached)
+Dependency zlib found: YES 1.2.13 (cached)
+Running command: /usr/bin/python3 has_hugepage.py
+--- stdout ---
+13009
+
+
+--- stderr ---
+
+
+Message: hugepage availability: true
+Adding test "acl_autotest"
+Adding test "atomic_autotest"
+Adding test "bitmap_autotest"
+Adding test "bpf_autotest"
+Adding test "bpf_convert_autotest"
+Adding test "bitops_autotest"
+Adding test "byteorder_autotest"
+Adding test "cksum_autotest"
+Adding test "cmdline_autotest"
+Adding test "common_autotest"
+Adding test "cpuflags_autotest"
+Adding test "debug_autotest"
+Adding test "devargs_autotest"
+Adding test "eal_flags_c_opt_autotest"
+Adding test "eal_flags_main_opt_autotest"
+Adding test "eal_flags_n_opt_autotest"
+Adding test "eal_flags_hpet_autotest"
+Adding test "eal_flags_no_huge_autotest"
+Adding test "eal_flags_a_opt_autotest"
+Adding test "eal_flags_b_opt_autotest"
+Adding test "eal_flags_vdev_opt_autotest"
+Adding test "eal_flags_r_opt_autotest"
+Adding test "eal_flags_mem_autotest"
+Adding test "eal_flags_file_prefix_autotest"
+Adding test "eal_flags_misc_autotest"
+Adding test "eal_fs_autotest"
+Adding test "errno_autotest"
+Adding test "ethdev_link_status"
+Adding test "event_ring_autotest"
+Adding test "fib_autotest"
+Adding test "fib6_autotest"
+Adding test "func_reentrancy_autotest"
+Adding test "hash_autotest"
+Adding test "interrupt_autotest"
+Adding test "ipfrag_autotest"
+Adding test "lcores_autotest"
+Adding test "logs_autotest"
+Adding test "lpm_autotest"
+Adding test "lpm6_autotest"
+Adding test "malloc_autotest"
+Adding test "mbuf_autotest"
+Adding test "mcslock_autotest"
+Adding test "memcpy_autotest"
+Adding test "memory_autotest"
+Adding test "mempool_autotest"
+Adding test "memzone_autotest"
+Adding test "meter_autotest"
+Adding test "multiprocess_autotest"
+Adding test "per_lcore_autotest"
+Adding test "pflock_autotest"
+Adding test "prefetch_autotest"
+Adding test "rcu_qsbr_autotest"
+Adding test "pie_autotest"
+Adding test "rib_autotest"
+Adding test "rib6_autotest"
+Adding test "ring_autotest"
+Adding test "rwlock_test1_autotest"
+Adding test "rwlock_rda_autotest"
+Adding test "rwlock_rds_wrm_autotest"
+Adding test "rwlock_rde_wro_autotest"
+Adding test "sched_autotest"
+Adding test "security_autotest"
+Adding test "spinlock_autotest"
+Adding test "stack_autotest"
+Adding test "stack_lf_autotest"
+Adding test "string_autotest"
+Adding test "tailq_autotest"
+Adding test "ticketlock_autotest"
+Adding test "timer_autotest"
+Adding test "user_delay_us"
+Adding test "version_autotest"
+Adding test "crc_autotest"
+Adding test "distributor_autotest"
+Adding test "eventdev_common_autotest"
+Adding test "fbarray_autotest"
+Adding test "hash_readwrite_func_autotest"
+Adding test "ipsec_autotest"
+Adding test "kni_autotest"
+Adding test "kvargs_autotest"
+Adding test "member_autotest"
+Adding test "power_cpufreq_autotest"
+Adding test "power_autotest"
+Adding test "power_kvm_vm_autotest"
+Adding test "reorder_autotest"
+Adding test "service_autotest"
+Adding test "thash_autotest"
+Adding test "trace_autotest"
+Adding test "flow_classify_autotest"
+Adding test "metrics_autotest"
+Adding test "telemetry_json_autotest"
+Adding test "telemetry_data_autotest"
+Adding test "table_autotest"
+Adding test "ring_pmd_autotest"
+Adding test "event_eth_tx_adapter_autotest"
+Adding test "bitratestats_autotest"
+Adding test "latencystats_autotest"
+Adding test "pdump_autotest"
+Adding test "vdev_autotest"
+Adding test "compressdev_autotest"
+Adding test "ring_perf_autotest"
+Adding test "malloc_perf_autotest"
+Adding test "mempool_perf_autotest"
+Adding test "memcpy_perf_autotest"
+Adding test "hash_perf_autotest"
+Adding test "timer_perf_autotest"
+Adding test "reciprocal_division"
+Adding test "reciprocal_division_perf"
+Adding test "lpm_perf_autotest"
+Adding test "rib_slow_autotest"
+Adding test "fib_slow_autotest"
+Adding test "fib_perf_autotest"
+Adding test "red_all"
+Adding test "pie_all"
+Adding test "barrier_autotest"
+Adding test "hash_multiwriter_autotest"
+Adding test "timer_racecond_autotest"
+Adding test "efd_autotest"
+Adding test "hash_functions_autotest"
+Adding test "member_perf_autotest"
+Adding test "efd_perf_autotest"
+Adding test "lpm6_perf_autotest"
+Adding test "rib6_slow_autotest"
+Adding test "fib6_slow_autotest"
+Adding test "fib6_perf_autotest"
+Adding test "rcu_qsbr_perf_autotest"
+Adding test "red_perf"
+Adding test "pie_perf"
+Adding test "distributor_perf_autotest"
+Adding test "pmd_perf_autotest"
+Adding test "stack_perf_autotest"
+Adding test "stack_lf_perf_autotest"
+Adding test "rand_perf_autotest"
+Adding test "hash_readwrite_perf_autotest"
+Adding test "hash_readwrite_lf_perf_autotest"
+Adding test "trace_perf_autotest"
+Adding test "ipsec_perf_autotest"
+Adding test "thash_perf_autotest"
+Adding test "ring_pmd_perf_autotest"
+Adding test "cryptodev_aesni_mb_autotest"
+Adding test "cryptodev_aesni_gcm_autotest"
+Adding test "cryptodev_cn9k_autotest"
+Adding test "cryptodev_cn10k_autotest"
+Adding test "cryptodev_dpaa_sec_autotest"
+Adding test "cryptodev_dpaa2_sec_autotest"
+Adding test "cryptodev_null_autotest"
+Adding test "cryptodev_openssl_autotest"
+Adding test "cryptodev_openssl_asym_autotest"
+Adding test "cryptodev_qat_autotest"
+Adding test "cryptodev_sw_armv8_autotest"
+Adding test "cryptodev_sw_kasumi_autotest"
+Adding test "cryptodev_sw_mvsam_autotest"
+Adding test "cryptodev_sw_snow3g_autotest"
+Adding test "cryptodev_sw_zuc_autotest"
+Adding test "dmadev_autotest"
+Adding test "eventdev_selftest_octeontx"
+Adding test "eventdev_selftest_sw"
+Adding test "rawdev_autotest"
+Adding test "link_bonding_autotest"
+Adding test "link_bonding_rssconf_autotest"
+Adding test "link_bonding_mode4_autotest"
+Adding test "cryptodev_scheduler_autotest"
+Adding test "dump_struct_sizes"
+Adding test "dump_mempool"
+Adding test "dump_malloc_stats"
+Adding test "dump_devargs"
+Adding test "dump_log_types"
+Adding test "dump_ring"
+Adding test "dump_physmem"
+Adding test "dump_memzone"
+Adding test "alarm_autotest"
+Adding test "cycles_autotest"
+Adding test "delay_us_sleep_autotest"
+Adding test "red_autotest"
+Program doxygen found: NO
+Program sphinx-build found: NO
+Configuring rte_build_config.h using configuration
+Running command: /usr/bin/python3 set-static-linker-flags.py
+--- stdout ---
+Processing /home/user/l2fwd-intl/external/dpdk/clean/meson-uninstalled/libdpdk-libs-uninstalled.pc
+Processing /home/user/l2fwd-intl/external/dpdk/clean/meson-uninstalled/libdpdk-uninstalled.pc
+Processing /home/user/l2fwd-intl/external/dpdk/clean/meson-private/libdpdk-libs.pc
+Processing /home/user/l2fwd-intl/external/dpdk/clean/meson-private/libdpdk.pc
+
+--- stderr ---
+
+
+Message: 
+=================
+Libraries Enabled
+=================
+
+libs:
+	kvargs, telemetry, eal, ring, rcu, mempool, mbuf, net, 
+	meter, ethdev, pci, cmdline, metrics, hash, timer, acl, 
+	bbdev, bitratestats, bpf, cfgfile, compressdev, cryptodev, distributor, efd, 
+	eventdev, gpudev, gro, gso, ip_frag, jobstats, kni, latencystats, 
+	lpm, member, pcapng, power, rawdev, regexdev, dmadev, rib, 
+	reorder, sched, security, stack, vhost, ipsec, fib, port, 
+	pdump, table, pipeline, flow_classify, graph, node, 
+
+Message: 
+===============
+Drivers Enabled
+===============
+
+common:
+	cpt, dpaax, iavf, octeontx, cnxk, mlx5, qat, sfc_efx, 
+	
+bus:
+	auxiliary, dpaa, fslmc, ifpga, pci, vdev, vmbus, 
+mempool:
+	bucket, cnxk, dpaa, dpaa2, octeontx, ring, stack, 
+dma:
+	cnxk, dpaa, hisilicon, idxd, ioat, skeleton, 
+net:
+	af_packet, ark, atlantic, avp, axgbe, bnx2x, bnxt, bond, 
+	cnxk, cxgbe, dpaa, dpaa2, e1000, ena, enetc, enetfec, 
+	enic, failsafe, fm10k, hinic, hns3, i40e, iavf, ice, 
+	igc, ionic, ixgbe, kni, liquidio, memif, mlx4, mlx5, 
+	netvsc, nfp, ngbe, null, octeontx, octeontx_ep, pfe, qede, 
+	ring, sfc, softnic, tap, thunderx, txgbe, vdev_netvsc, vhost, 
+	virtio, vmxnet3, 
+raw:
+	cnxk_bphy, cnxk_gpio, dpaa2_cmdif, dpaa2_qdma, ntb, skeleton, 
+crypto:
+	bcmfs, caam_jr, ccp, cnxk, dpaa_sec, dpaa2_sec, mlx5, nitrox, 
+	null, octeontx, openssl, scheduler, virtio, 
+compress:
+	mlx5, octeontx, zlib, 
+regex:
+	mlx5, cn9k, 
+vdpa:
+	ifc, mlx5, sfc, 
+event:
+	cnxk, dlb2, dpaa, dpaa2, dsw, opdl, skeleton, sw, 
+	octeontx, 
+baseband:
+	acc100, fpga_5gnr_fec, fpga_lte_fec, la12xx, null, turbo_sw, 
+gpu:
+	cuda, 
+
+Message: 
+=================
+Content Skipped
+=================
+
+libs:
+	
+drivers:
+	common/mvep:	missing dependency, "libmusdk"
+	net/af_xdp:	missing dependency, "libxdp" and "libbpf"
+	net/ipn3ke:	missing dependency, "libfdt"
+	net/mvneta:	missing dependency, "libmusdk"
+	net/mvpp2:	missing dependency, "libmusdk"
+	net/nfb:	missing dependency, "libnfb"
+	net/pcap:	missing dependency, "libpcap"
+	raw/ifpga:	missing dependency, "libfdt"
+	raw/ioat:	replaced by dmadev drivers
+	crypto/armv8:	missing dependency, "libAArch64crypto"
+	crypto/ipsec_mb:	missing dependency, "libIPSec_MB"
+	crypto/mvsam:	missing dependency, "libmusdk"
+	compress/isal:	missing dependency, "libisal"
+	
+
+Build targets in project: 980
+
+Found ninja-1.10.0 at /usr/bin/ninja
+Command line for building ['drivers/libtmp_rte_event_cnxk.a'] is long, using a response file
+Command line for building ['drivers/librte_event_cnxk.a'] is long, using a response file
+Command line for building ['drivers/librte_event_cnxk.so.22.1'] is long, using a response file
+NOTICE: You are using Python 3.6 which is EOL. Starting with v0.62.0, Meson will require Python 3.7 or newer
